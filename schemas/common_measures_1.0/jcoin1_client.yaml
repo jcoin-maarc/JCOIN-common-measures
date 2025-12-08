@@ -2658,7 +2658,398 @@ fields:
   jcoin:section: Substance Use
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: s5
+  jcoin:originalName: S5
+- name: times_er_visits
+  type: integer
+  title: 'Emergency room:  Number of visits'
+  description: '[...times have you had to go to an emergency room without being admitted
+    to the hospital?] During the past xx days (since last assessment), how many .
+    . . [Write 0 days if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U1
+- name: nights_hospital_detox
+  type: integer
+  title: 'Hospital detox program: Number of nights'
+  description: '[...nights were you in a hospital detoxification program for your
+    alcohol and other drug use (across all episodes)?] During the past xx days (since
+    last assessment), how many . . . [Write 0 days if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U2
+- name: nights_hospitalized
+  type: integer
+  title: 'Hospitalization:  Number of nights'
+  description: '[...nights were you in a hospital for any other reason than detoxification?]
+    During the past xx days (since last assessment), how many . . . [Write 0 days
+    if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U3
+- name: nights_residential_detox
+  type: integer
+  title: 'Residential detox: Number of nights'
+  description: '[...nights were you in a non-hospital or social detoxification program
+    from alcohol or other drugs (also called residential detox)?] During the past
+    xx days (since last assessment), how many . . . [Write 0 days if you have not
+    had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U4
+- name: nights_residential_sud_tx
+  type: integer
+  title: 'Residential treatment program for alcohol/drugs: Number of nights'
+  description: '[...nights were you in a residential treatment program for alcohol
+    or drug use?] During the past xx days (since last assessment), how many . . .
+    [Write 0 days if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U5a
+- name: nights_residential_mh
+  type: integer
+  title: 'Residential treatment program for mental health: Number of nights'
+  description: '[...nights were you in a residential treatment program for mental
+    health?] During the past xx days (since last assessment), how many . . . [Write
+    0 days if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U5b
+- name: nights_physical_rehab
+  type: integer
+  title: 'Rehab facility for physical health: Number of nights'
+  description: '[...nights were you in a residential, nursing home, or other rehabilitation
+    facility for your physical health?] During the past xx days (since last assessment),
+    how many . . . [Write 0 days if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U5c
+- name: visits_primary_care
+  type: integer
+  title: 'Primary care provider:  Number of visits'
+  description: '[...times have you visited a primary care provier (physician, nurse,
+    nurse practitioner, or physician''s assistant)?] During the past xx days (since
+    last assessment), how many . . . [Write 0 days if you have not had this experience]'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U6
+  jcoin:notes: If 0, skip to U7.
+- name: pc_reason_alc_drugs
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: 'Primary care visit reason: Alcohol/drug use'
+  description: '[Alcohol or other drug use?] Why did you visit a primary care provider?
+    (ADD SKIP LOGIC)'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U6a
+  jcoin:optional: true
+- name: pc_reason_mh
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: 'Primary care visit reason: Mental health'
+  description: '[Mental health?] Why did you visit a primary care provider? (ADD SKIP
+    LOGIC)'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U6b
+  jcoin:optional: true
+- name: pc_reason_physical
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: 'Primary care visit reason:  Physical health'
+  description: '[Physical health?] Why did you visit a primary care provider? (ADD
+    SKIP LOGIC)'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U6c
+  jcoin:optional: true
+- name: pc_reason_other
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: 'Primary care visit reason:  Some other reason (specify)'
+  description: '[Some other reason?] Why did you visit a primary care provider? (ADD
+    SKIP LOGIC)'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U6d
+  jcoin:optional: true
+- name: pc_reason_other_specify
+  type: string
+  title: 'Primary care visit reason: Specify other reason'
+  description: '[Specify other reason you visited primary care provider] Why did you
+    visit a primary care provider? (ADD SKIP LOGIC)'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U6d
+  jcoin:optional: true
+- name: op_tx_days
+  type: integer
+  title: 'Outpatient treament program for alcohol/substance use: Number of days'
+  description: '[...days did you participate in any other outpatient treatment program
+    specializing in alcohol or substance use? (OTHER THAN U1-6)                 ]
+    Other than times you already mentioned in <reference to u6>, during the past 3
+    months (since last assessment), how many...'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U7
+  jcoin:notes: If 0, skip to U8.
+- name: op_tx_days_visited
+  type: integer
+  title: 'Outpatient treatment program: Number of days physically visiting program'
+  description: How many of these days did you physically visit the (outpatient treatment)
+    program?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U7a
+  jcoin:optional: true
+- name: op_tx_days_online
+  type: integer
+  title: 'Outpatient treatment program: Number of days participating online'
+  description: How many of these days did you participate (in the outpatient tx program)
+    online (e.g., smart phone, computer, or tablet)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U7b
+  jcoin:optional: true
+- name: op_tx_days_doctor
+  type: integer
+  title: 'Outpatient treatment program: Number of days seeing doctor'
+  description: How many of these days did you see a doctor (at the outpatient treatment
+    program)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U7c
+  jcoin:optional: true
+- name: op_tx_days_therapy
+  type: integer
+  title: 'Outpatient treatment program: Number of days participating in therapy'
+  description: How many of these days did you only participate in individual or group
+    therapy?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U7d
+  jcoin:optional: true
+- name: op_tx_days_moud_only
+  type: integer
+  title: 'Outpatient treatment program: Number of days for medication management'
+  description: How many of these days were for medication management only?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U7e
+  jcoin:optional: true
+- name: psych_visits
+  type: integer
+  title: 'Psychiatrist/psychologist:  Number of total visits'
+  description: Other than times you already mentioned above, during the past 3 months
+    (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist
+    (Ph.D., Psy.D)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U8
+  jcoin:optional: true
+  join:notes: If 0, skip to U9.
+- name: psych_visits_in_person
+  type: integer
+  title: 'Psychiatrist/psychologist: Number of in-person visits'
+  description: How many of these times did you physically visit the program (psychiatrist/psychologist)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U8a
+  jcoin:optional: true
+- name: psych_visits_online
+  type: integer
+  title: 'Psychiatrist/psychologist: Number of online visits'
+  description: How many of these times did you participate online (phone, computer,
+    or tablet; with a psychiatrist/psychologist)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U8b
+  jcoin:optional: true
+- name: counselor_visits
+  type: integer
+  title: 'Counselor/social worker: Number of total visits'
+  description: Other than times you already mentioned above, during the past 3 months
+    (since last assessment), how many times have you seen any other kind or counselor
+    or social worker?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U9
+  jcoin:optional: true
+  jcoin:notes: If 0, skip to U13.
+- name: counselor_visits_in_person
+  type: integer
+  title: 'Counselor/social worker: Number of in-person visits'
+  description: '[...did you physically visit the program (counselor/social worker)?]
+    How many of these times did you...'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U9a
+  jcoin:optional: true
+- name: counselor_visits_online
+  type: integer
+  title: 'Counselor/social worker: Number of online visits'
+  description: '...did you participate online (phone, computer, or tablet; with a
+    counselor/social worker)?'
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U9b
+  jcoin:optional: true
+- name: healthcare_expense
+  type: number
+  title: Healthcare cost
+  description: In the past xx days (since last assessment), how much money have you
+    spent on all healthcare (e.g., copayments or prescriptions)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U13
+  jcoin:optional: true
+- name: received_sud_tx
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Substance use treatment
+  description: Have you received any substance use treatment in the past xx days (since
+    last assessment)?
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U14
+  jcoin:optional: true
+- name: sud_tx_organized
+  type: string
+  title: 'Substance use tx provider:  Well-organized'
+  description: '[The provider is organized and well-run.] Considering the substance
+    use treatment from your most recent substance abuse treatment provider in the
+    past xx days (since last assessment), please indicate how much you agree with
+    each of the following statements'
+  constraints:
+    enum:
+    - Strongly agree
+    - Somewhat agree
+    - Neutral
+    - Somewhat disagree
+    - Strongly disagree
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U14a
+  jcoin:optional: true
+- name: sud_tx_satisfied
+  type: string
+  title: 'Substance use tx provider:  Satisfaction'
+  description: '[You are satisfied with this provider.] Considering the substance
+    use treatment from your most recent substance abuse treatment provider in the
+    past xx days (since last assessment), please indicate how much you agree with
+    each of the following statements'
+  constraints:
+    enum:
+    - Strongly agree
+    - Somewhat agree
+    - Neutral
+    - Somewhat disagree
+    - Strongly disagree
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U14b
+  jcoin:optional: true
+- name: sud_tx_efficient
+  type: string
+  title: 'Substance use tx provider:  Efficient staff'
+  description: '[The staff are efficient at doing their job.] Considering the substance
+    use treatment from your most recent substance abuse treatment provider in the
+    past xx days (since last assessment), please indicate how much you agree with
+    each of the following statements'
+  constraints:
+    enum:
+    - Strongly agree
+    - Somewhat agree
+    - Neutral
+    - Somewhat disagree
+    - Strongly disagree
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U14c
+  jcoin:optional: true
+- name: sud_tx_personal
+  type: string
+  title: 'Substance use tx provider:  Personal counseling'
+  description: '[You can get plenty of personal counseling at this provider.] Considering
+    the substance use treatment from your most recent substance abuse treatment provider
+    in the past xx days (since last assessment), please indicate how much you agree
+    with each of the following statements'
+  constraints:
+    enum:
+    - Strongly agree
+    - Somewhat agree
+    - Neutral
+    - Somewhat disagree
+    - Strongly disagree
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U14d
+  jcoin:optional: true
+- name: sud_tx_moud
+  type: string
+  title: 'Substance use tx provider:  Medication assistance for opioid use'
+  description: '[You can get plenty of medication assistance for opioid use at this
+    provider.] Considering the substance use treatment from your most recent substance
+    abuse treatment provider in the past xx days (since last assessment), please indicate
+    how much you agree with each of the following statements'
+  constraints:
+    enum:
+    - Strongly agree
+    - Somewhat agree
+    - Neutral
+    - Somewhat disagree
+    - Strongly disagree
+  jcoin:section: Utilization of Services
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: U14e
+  jcoin:optional: true
 
 
 
