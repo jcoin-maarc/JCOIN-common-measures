@@ -120,7 +120,6 @@ fields:
   description: Sequential number corresponding to each planned interview or
     visit (e.g., 'Baseline' = 1, 'Three months' = 2, 'Six months' = 3, etc.
   constraints:
-    required: true
     minimum: 1
   jcoin:section: Administrative
   jcoin:baseline: true
@@ -130,7 +129,6 @@ fields:
   title: Timepoint
   description: Intended visit timepoint (e.g., 'Baseline', '3 month', '6 month', etc.)
   constraints:
-    required: true
     pattern: ^Baseline$|^\d+ month$
   jcoin:section: Administrative
   jcoin:baseline: true
@@ -140,8 +138,6 @@ fields:
   format: '%Y%m%d'
   title: Visit date
   description: Date of visit/interview (shifted for de-identification)
-  constraints:
-    required: true
   jcoin:section: Administrative
   jcoin:baseline: true
   jcoin:followup: true
@@ -177,8 +173,10 @@ fields:
   type: boolean
   trueValues:
   - Checked
+  - 'Yes'
   falseValues:
   - Unchecked
+  - 'No'
   title: 'Race: White'
   description: '[White] What is your race? SELECT ALL THAT APPLY'
   jcoin:section: Demographics
@@ -188,8 +186,10 @@ fields:
   type: boolean
   trueValues:
   - Checked
+  - 'Yes'
   falseValues:
   - Unchecked
+  - 'No'
   title: 'Race: Black or African American'
   description: '[Black or African American] What is your race? SELECT ALL THAT APPLY'
   jcoin:section: Demographics
@@ -199,8 +199,10 @@ fields:
   type: boolean
   trueValues:
   - Checked
+  - 'Yes'
   falseValues:
   - Unchecked
+  - 'No'
   title: 'Race: American Indian or Alaska Native'
   description: '[American Indian or Alaska Native] What is your race? SELECT ALL THAT
     APPLY'
@@ -221,8 +223,10 @@ fields:
   type: boolean
   trueValues:
   - Checked
+  - 'Yes'
   falseValues:
   - Unchecked
+  - 'No'
   title: 'Race: Asian'
   description: '[Asian] What is your race? SELECT ALL THAT APPLY'
   jcoin:section: Demographics
@@ -232,8 +236,10 @@ fields:
   type: boolean
   trueValues:
   - Checked
+  - 'Yes'
   falseValues:
   - Unchecked
+  - 'No'
   title: 'Race: Native Hawaiian or Other Pacific Islander'
   description: '[Native Hawaiian or Other Pacific Islander] What is your race? SELECT
     ALL THAT APPLY'
@@ -244,8 +250,10 @@ fields:
   type: boolean
   trueValues:
   - Checked
+  - 'Yes'
   falseValues:
   - Unchecked
+  - 'No'
   title: 'Race: Some other race'
   description: '[Other] What is your race? SELECT ALL THAT APPLY'
   jcoin:section: Demographics
@@ -407,6 +415,7 @@ fields:
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:originalName: D5
+  jcoin:notes: If Married, skip to D6.
 - name: living_as_married
   type: string
   title: Married with partner
@@ -452,6 +461,2207 @@ fields:
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:originalName: D6
+- name: household_people
+  type: integer
+  title: Household size
+  description: How many people, including yourself, are there in your household?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7a
+  jcoin:notes: Optional during follow-up.
+- name: household_under_18
+  type: integer
+  title: People under 18 years old in household
+  description: '[How many of the people in your household are under the age of 18?]
+    The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90
+    days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7b
+  jcoin:notes: Optional during follow-up.
+- name: household_income
+  type: number
+  title: Total household income
+  description: '[During the past <if baseline: 90 days/90 days prior to entering jail;
+    if follow up: xx days (since last assessment/interview/contact/visit)>, what was
+    the total income of everyone in your household together that provided you with
+    support?] The next few questions are about your HOUSEHOLD in the past <if baseline:
+    90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7c
+  jcoin:optional: true
+- name: household_income_legal
+  type: string
+  title: Total household income from legal sources
+  description: '[During the past 12 months, which of the following is the category
+    that your total household income from legal sources would be in?] The next few
+    questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior
+    to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  constraints:
+    enum:
+    - Less than $12,500
+    - $12,500 - $20,000
+    - $20,001 - $30,000
+    - $30,001 - $40,000
+    - $40,001 - $50,000
+    - $50,001 - $100,000
+    - More than $100,000
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7d
+  jcoin:notes: Optional during follow-up.
+- name: household_public_assist_any
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Public assistance for household
+  description: '[During the past <if baseline: 90 days/90 days prior to entering jail;
+    if follow up: xx days (since last assessment/interview/contact/visit)>, did your
+    household receive any public assistance like unemployment, food stamps / TANF,
+    subsidized housing, or supplemental security income?] The next few questions are
+    about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering
+    jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7d1
+  jcoin:optional: true
+  jcoin:notes: If No, skip to D7e1.
+- name: household_public_assist_dollars
+  type: number
+  title: Total household money from public assistance
+  description: '[During the past xx days (since last assessment), approximately how
+    much money has your household all together received from public assistance sources
+    like unemployment, food stamps (TANF), subsidized housing, supplemental security
+    income?] The next few questions are about your HOUSEHOLD in the past <if baseline:
+    90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7d2
+  jcoin:optional: true
+- name: household_nonemploy_any
+  type: string
+  title: Other non-employmnet income sources
+  description: '[During the past xx days (since last assessment), did your household
+    receive any other non-employment income sources like retirement, pension, alimony,
+    child support, or interest?] The next few questions are about your HOUSEHOLD in
+    the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx
+    days (since last assessment/interview/contact/visit)>.  Your household includes
+    people you live with, and with whom you share your income and expenses - husband,
+    wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7e1
+  jcoin:optional: true
+  jcoin:notes: If No, skip to D7f1.
+- name: household_nonemploy_dollars
+  type: number
+  title: Total household money from other non-employment income sources
+  description: '[During the past xx days (since last assessment), approximately how
+    much money has your household all together received from other non-employment
+    sources like retirement, pension, alimony, child support, interest?] The next
+    few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days
+    prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7e2
+  jcoin:optional: true
+- name: household_income_illegal_any
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Non-employment income with risk of legal or other trouble
+  description: '[During the past xx days (since last assessment), outside of employment
+    described above, did you receive any other income from activities that might get
+    you into trouble or be against the law, like dealing, gambling, or theft?] The
+    next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90
+    days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7f1
+  jcoin:optional: true
+  jcoin:notes: If No, skip to D8.
+- name: household_income_illegal_dollars
+  type: number
+  title: Total household money with risk of causing  legal or other trouble activities
+  description: '[During the past xx days (since last assessment), outside of employment
+    described above, how much money did you earn from activities that might get you
+    into trouble or be against the law, like dealing, gambling, or theft? ] The next
+    few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days
+    prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your
+    household includes people you live with, and with whom you share your income and
+    expenses - husband, wife, children, relatives, and others.'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D7f2
+  jcoin:optional: true
+- name: current_work_school
+  type: string
+  title: Current school or work situation description
+  description: Which one of the following statements best describes your work or school
+    situation currently? (CLARIFY AND CODE) [For D8, include work under the table
+    but not any other illegal work or income]
+  constraints:
+    enum:
+    - Working full-time, 35 hours or more a week
+    - Working part-time, less than 35 hours a week
+    - Have a job where you are paid one day at a time (day labor)
+    - Have a job, but not at work because of treatment, extended illness, maternity
+      leave, furlough or strike
+    - Have a job, but not at work because it is seasonal work
+    - Unemployed or laid off and looking for work
+    - Unemployed or laid off and not looking for work
+    - Full-time homemaker (keeping house)
+    - In school or training
+    - In school or training, but not currently going to classes
+    - Retired
+    - In jail, prison or detention
+    - Too disabled for work
+    - In the military
+    - Doing volunteer work
+    - Some other work situation
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+- name: work_days
+  type: integer
+  title: Number of days worked
+  description: During the past xx days (since last assessment), on how many days have
+    you worked?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8a
+  jcoin:notes: If 0, skip to D9.
+- name: work_typical_days_week
+  type: integer
+  title: Days per week worked
+  description: During the past xx days (since last assessment), how many days per
+    week do you typically work?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8b
+- name: work_hours_week
+  type: integer
+  title: Hours per week worked
+  description: During the past xx days (since last assessment), How many hours per
+    week do you usually work?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8b1
+- name: work_hourly_wage
+  type: number
+  title: Hourly rate
+  description: During the past xx days (since last assessment), approximately how
+    much do you make per hour? [If someone is working multiple jobs, take the average
+    amount per hour across the job]
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8c
+- name: work_health_insurance
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Health insurance from work
+  description: '[Health Insurance] Do any of the places that you work offer you the
+    following benefits? (MARK ALL THAT APPLY)'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8d
+  jcoin:optional: true
+- name: work_paid_time_off
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Paid time off from work
+  description: '[Paid time off] Do any of the places that you work offer you the following
+    benefits? (MARK ALL THAT APPLY)'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8d
+  jcoin:optional: true
+- name: work_pension
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Benefit or pension plan from work
+  description: '[Defined benefit plan or pension] Do any of the places that you work
+    offer you the following benefits? (MARK ALL THAT APPLY)'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8d
+  jcoin:optional: true
+- name: work_retirement_plan
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Retirement plan from work
+  description: '[An arrangement such as a 401(k) or 403(b) plan, under which your
+    employer contributes money towards your retirement every pay period] Do any of
+    the places that you work offer you the following benefits? (MARK ALL THAT APPLY)'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8d
+  jcoin:optional: true
+- name: work_occupation
+  type: string
+  title: Occupation
+  description: What is your occupation?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8e
+  jcoin:optional: true
+- name: have_health_insurance
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Currently covered by health insurance
+  description: Are you currently covered by health insurance or some other kind of
+    health care plan?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9
+  jcoin:notes: If No, skip to D10.
+- name: insured_private
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Private health insurance plan coverage
+  description: '[Private health insurance] What kind of health insurance or health
+    care coverage do you have?  Include those that pay for only one type of service
+    (such as nursing home care, accidents, or dental care).  Exclude private plans
+    that only provide extra cash while hospitalized.  If you have more than one kind
+    of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_medicare
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Medicare plan coverage
+  description: '[Medicare] What kind of health insurance or health care coverage do
+    you have?  Include those that pay for only one type of service (such as nursing
+    home care, accidents, or dental care).  Exclude private plans that only provide
+    extra cash while hospitalized.  If you have more than one kind of health insurance,
+    tell me all plans that you have. [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_medigap
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Medigap plan coverage
+  description: '[Medigap] What kind of health insurance or health care coverage do
+    you have?  Include those that pay for only one type of service (such as nursing
+    home care, accidents, or dental care).  Exclude private plans that only provide
+    extra cash while hospitalized.  If you have more than one kind of health insurance,
+    tell me all plans that you have. [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_medicaid
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Medicaid plan coverage
+  description: '[Medicaid ({If Available, Display State Plan Name})] What kind of
+    health insurance or health care coverage do you have?  Include those that pay
+    for only one type of service (such as nursing home care, accidents, or dental
+    care).  Exclude private plans that only provide extra cash while hospitalized.  If
+    you have more than one kind of health insurance, tell me all plans that you have.
+    [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_chip
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Children's Health Insurance coverage
+  description: '[SCHIP (CHIP/Children''s Health Insurance Program)] What kind of health
+    insurance or health care coverage do you have?  Include those that pay for only
+    one type of service (such as nursing home care, accidents, or dental care).  Exclude
+    private plans that only provide extra cash while hospitalized.  If you have more
+    than one kind of health insurance, tell me all plans that you have. [MARK ALL
+    THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_military
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Military plan coverage
+  description: '[Military Health Care (Tricare/VA/CHAMP-VA)] What kind of health insurance
+    or health care coverage do you have?  Include those that pay for only one type
+    of service (such as nursing home care, accidents, or dental care).  Exclude private
+    plans that only provide extra cash while hospitalized.  If you have more than
+    one kind of health insurance, tell me all plans that you have. [MARK ALL THAT
+    APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_indian
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Indian Health Service coverage
+  description: '[Indian Health Service] What kind of health insurance or health care
+    coverage do you have?  Include those that pay for only one type of service (such
+    as nursing home care, accidents, or dental care).  Exclude private plans that
+    only provide extra cash while hospitalized.  If you have more than one kind of
+    health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_state
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: State health coverage
+  description: '[State-Sponsored Health Plan ({If Available, Display State Plan Name})]
+    What kind of health insurance or health care coverage do you have?  Include those
+    that pay for only one type of service (such as nursing home care, accidents, or
+    dental care).  Exclude private plans that only provide extra cash while hospitalized.  If
+    you have more than one kind of health insurance, tell me all plans that you have.
+    [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_other_gov
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Other government coverage
+  description: '[Other government program] What kind of health insurance or health
+    care coverage do you have?  Include those that pay for only one type of service
+    (such as nursing home care, accidents, or dental care).  Exclude private plans
+    that only provide extra cash while hospitalized.  If you have more than one kind
+    of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_single_service
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Single service coverage
+  description: '[Single service plan (e.g., dental, vision, prescriptions)] What kind
+    of health insurance or health care coverage do you have?  Include those that pay
+    for only one type of service (such as nursing home care, accidents, or dental
+    care).  Exclude private plans that only provide extra cash while hospitalized.  If
+    you have more than one kind of health insurance, tell me all plans that you have.
+    [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: insured_dont_know
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Don't know about coverage
+  description: '[Don''t know] What kind of health insurance or health care coverage
+    do you have?  Include those that pay for only one type of service (such as nursing
+    home care, accidents, or dental care).  Exclude private plans that only provide
+    extra cash while hospitalized.  If you have more than one kind of health insurance,
+    tell me all plans that you have. [MARK ALL THAT APPLY]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D9a
+- name: days_uninsured
+  type: integer
+  title: Days uninsured
+  description: During the past xx days (since last assessment), on how many days were
+    you uninsured?
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D10
+- name: days_self_help
+  type: integer
+  title: Number of days at self help group
+  description: '[Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery)
+    for your alcohol or other drug use? ] During the past xx days (since last assessment),
+    on how many days have you . . .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11a
+  jcoin:optional: true
+- name: days_drugfree_activity
+  type: integer
+  title: Number of days at non-alcoholic, structured activities
+  description: '[Been in other structured activities where no one was using alcohol
+    or drugs? ] During the past xx days (since last assessment), on how many days
+    have you . . .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11b
+  jcoin:optional: true
+- name: days_homeless
+  type: integer
+  title: Number of days being homeless
+  description: '[Been homeless or had to stay with someone else to avoid being homeless?
+    ] During the past xx days (since last assessment), on how many days have you .
+    . .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11c
+  jcoin:notes: Optional during follow-up.
+- name: days_shelter
+  type: integer
+  title: Number of days in homeless shelter
+  description: '[Lived in a homeless shelter or emergency housing? ] During the past
+    xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS
+    = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11d
+  jcoin:optional: true
+- name: days_household_alcohol
+  type: integer
+  title: Number of days in household with alcohol use
+  description: '[Lived where other people were using alcohol? ] During the past xx
+    days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS
+    = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11e
+  jcoin:optional: true
+- name: days_household_drug
+  type: integer
+  title: Number of days in household with drug use
+  description: '[Lived where other people were using drugs? ] During the past xx days
+    (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11f
+  jcoin:optional: true
+- name: days_activities_substance_use
+  type: integer
+  title: Number of days of formal activities with alcohol
+  description: '[Been to formal activities where people were using alcohol or drugs?]
+    During the past xx days (since last assessment), on how many days have you . .
+    .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11g
+  jcoin:optional: true
+- name: days_family_trouble
+  type: integer
+  title: Number of days of home or family trouble
+  description: '[Gotten into trouble at home or with your family for any reason? ]
+    During the past xx days (since last assessment), on how many days have you . .
+    .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11h
+  jcoin:optional: true
+- name: days_arguments
+  type: integer
+  title: Number of days of  abusive behavior in arguments
+  description: '[Had an argument in which you swore, cursed, threatened another person,
+    threw something, or pushed or hit another person in any way? ] During the past
+    xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS
+    = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11i
+  jcoin:optional: true
+- name: days_abused
+  type: integer
+  title: Number of days being physically, emotionally, sexually abused
+  description: '[Been attacked with a weapon, beaten, sexually abused or emotionally
+    abused?] During the past xx days (since last assessment), on how many days have
+    you . . .  [NOTE: MAX DAYS = 90]'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D11j
+  jcoin:optional: true
+- name: narcan_received
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Received Narcan kit
+  description: '[At your most recent release from [jail/prison], did you receive a
+    Naloxone rescue kit (Narcan kit) to save yourself or someone else in the event
+    of an opioid overdose? [Overdose definition = use enough of the drug to cause
+    a life-threatening reaction that requires medical attention]] If respondent was
+    in jail/prison during the past 3 months but not currently, ask:'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: O3
+  jcoin:optional: true
+  jcoin:notes: If No, skip to P1a.
+- name: narcan_used
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Used Narcan Kit
+  description: '[Have you had to use it?] If respondent was in jail/prison during
+    the past 3 months but not currently, ask:'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: O3a
+  jcoin:optional: true
+  jcoin:notes: If No, skip to P1a.
+- name: narcan_refilled
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Refilled Narcan Kit
+  description: '[Have you obtained a refill/replacement kit?] If respondent was in
+    jail/prison during the past 3 months but not currently, ask:'
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: O3b
+  jcoin:optional: true
+- name: difficulty_chores
+  type: string
+  title: Difficulty with chores and house keeping
+  description: '[... do chores such as sweeping, mopping, janitorial work or other
+    house cleaning work] In the past 7 days I was able to . . .'
+  constraints:
+    enum:
+    - Without any difficulty
+    - With a little difficulty
+    - With some difficulty
+    - With much difficulty
+    - Unable to do
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P1a
+- name: difficulty_stairs
+  type: string
+  title: Difficulty using stairs
+  description: '[...go up and down stairs at a normal pace] In the past 7 days I was
+    able to . . .'
+  constraints:
+    enum:
+    - Without any difficulty
+    - With a little difficulty
+    - With some difficulty
+    - With much difficulty
+    - Unable to do
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P1b
+- name: difficulty_walking
+  type: string
+  title: Difficulty walking
+  description: '[...walk around for at least 15 minutes] In the past 7 days I was
+    able to . . .'
+  constraints:
+    enum:
+    - Without any difficulty
+    - With a little difficulty
+    - With some difficulty
+    - With much difficulty
+    - Unable to do
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P1c
+- name: difficulty_traveling
+  type: string
+  title: Difficulty traveling
+  description: '[... get from place to place] In the past 7 days I was able to . .
+    .'
+  constraints:
+    enum:
+    - Without any difficulty
+    - With a little difficulty
+    - With some difficulty
+    - With much difficulty
+    - Unable to do
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P1d
+- name: trouble_with_leisure
+  type: string
+  title: Trouble with Leisure activities with others
+  description: '[...I had trouble doing all of my regular leisure activities with
+    others ] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P2a
+- name: trouble_with_family
+  type: string
+  title: Trouble with family activities
+  description: '[...I had trouble doing all of the family activities that I want to
+    do ] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P2b
+- name: trouble_with_work
+  type: string
+  title: Trouble with work
+  description: '[...I had trouble doing all of my usual work (include work at home)
+    ] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P2c
+- name: trouble_with_activities
+  type: string
+  title: Trouble with activities with friends
+  description: '[...I had trouble doing all of the activities with friends that I
+    want to do ] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P2d
+- name: past_week_fearful
+  type: string
+  title: Feeling fearful
+  description: '[...I felt fearful] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P3a
+- name: past_week_anxiety
+  type: string
+  title: Feeling hard to focus on anything other than anxiety
+  description: '[...I found it hard to focus on anything other than my anxiety] In
+    the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P3b
+- name: past_week_worried
+  type: string
+  title: Feeling overwhelming worry
+  description: '[...My worries overwhelmed me] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P3c
+- name: past_week_uneasy
+  type: string
+  title: Feeling uneasy
+  description: '[...I felt uneasy] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P3d
+- name: past_week_worthless
+  type: string
+  title: Feeling worthless
+  description: '[...I felt worthless] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P4a
+- name: past_week_helpless
+  type: string
+  title: Feeling helpless
+  description: '[...I felt helpless] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P4b
+- name: past_week_depressed
+  type: string
+  title: Feeling depressed
+  description: '[...I felt depressed] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P4c
+- name: past_week_hopeless
+  type: string
+  title: Feeling hopeless
+  description: '[...I felt hopeless ] In the past 7 days...'
+  constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P4d
+- name: past_week_fatigued
+  type: string
+  title: Feeling fatigued
+  description: '[...I felt fatigued] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P5a
+- name: past_week_tired
+  type: string
+  title: Trouble starting things because tired
+  description: '[...I had trouble starting things because I was tired  ] In the past
+    7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P5b
+- name: past_week_rundown
+  type: string
+  title: Feeling run-down
+  description: '[...how run-down did you feel on average? ] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P5c
+- name: fatigue_level
+  type: string
+  title: Fatigue level
+  description: '[...how fatigued were you on average?] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P5d
+- name: sleep_quality
+  type: string
+  title: Sleep quality
+  description: '[...my sleep quality was] In the past 7 days...'
+  constraints:
+    enum:
+    - Very poor
+    - Poor
+    - Fair
+    - Good
+    - Very good
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P6a
+- name: sleep_refreshing
+  type: string
+  title: Refreshing sleep
+  description: '[...my sleep was refreshing] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P6b
+- name: sleep_problems
+  type: string
+  title: Sleep problems
+  description: '[...I had problems with my sleep] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P6c
+- name: sleep_difficulty
+  type: string
+  title: Difficulty falling asleep
+  description: '[...I had difficulty falling asleep] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P6d
+- name: can_concentrate
+  type: string
+  title: Concentration
+  description: '[...I have been able to concentrate ] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P7a
+- name: can_remember
+  type: string
+  title: Remembering things
+  description: '[...I have been able to remember to do things, like take medicine
+    or buy something I needed ] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P7b
+- name: pain_daily_activity
+  type: string
+  title: Pain interference with day to day activity
+  description: '[...How much did pain interfere with your day to day activities? ]
+    In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P8a
+- name: pain_work_around_house
+  type: string
+  title: Pain inteference with home work
+  description: '[...How much did pain interfere with work around the home? ] In the
+    past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P8b
+- name: pain_social_activity
+  type: string
+  title: Pain interference with social activities
+  description: '[...How much did pain interfere with your ability to participate in
+    social activities? ] In the past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P8c
+- name: pain_household_chores
+  type: string
+  title: Pain interference with household chores
+  description: '[...How much did pain interfere with your household chores? ] In the
+    past 7 days...'
+  constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P8d
+- name: pain_intensity
+  type: integer
+  title: Pain intensity rating
+  description: '[In the past 7 days, how would you rate your pain on average?] For
+    the next question, please responds on scale from 0 being no pain to 10 being the
+    worst pain imaginable.'
+  constraints:
+    maximum: 10
+  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: P9
+- name: last_time_multiple_partners
+  type: string
+  title: Multiple sex partners
+  description: '[...had two or more sex partners during the same time period?] When
+    was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1a
+  jcoin:optional: true
+- name: last_time_unprotected_sex
+  type: string
+  title: Unprotected sex
+  description: '[...had sex without using any kind of condom, dental dam or other
+    barrier to protect you and your partner from diseases or pregnancy?] When was
+    the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1b
+  jcoin:optional: true
+- name: last_time_sex_intoxicated
+  type: string
+  title: Alcohol and drug intoxication
+  description: '[...had sex while you or your partner was intoxicated from alcohol
+    or other drugs?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1c
+  jcoin:optional: true
+- name: last_time_injection_drug
+  type: string
+  title: Drug injection with needle
+  description: '[...used a needle to inject drugs like heroin, cocaine or amphetamines?]
+    When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1d
+  jcoin:optional: true
+- name: last_time_attacked_weapon
+  type: string
+  title: Attacked with weapon
+  description: '[...were attacked with a weapon, including a gun, knife, stick, bottle
+    or other weapon?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1g
+  jcoin:optional: true
+- name: last_time_physical_abuse
+  type: string
+  title: Physical abuse
+  description: '[...were physically abused, to the point that you had bruises, cuts
+    or broken bones?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1h
+  jcoin:optional: true
+- name: last_time_sex_abuse
+  type: string
+  title: Sexually abused
+  description: '[...were sexually abused, where someone pressured or forced you to
+    participate in sexual acts against your will, including your regular sex partner,
+    a family member or friend?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1j
+  jcoin:optional: true
+- name: last_time_emotional_abuse
+  type: string
+  title: Emotionally abused
+  description: '[...were emotionally abused, where someone did or said things to make
+    you feel very bad about yourself or your life?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1k
+  jcoin:optional: true
+- name: last_time_ongoing_abuse
+  type: string
+  title: Physically, sexually, or emotionally abused
+  description: '[...were physically, sexual or emotionally abused several times or
+    over a long period of time?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1m
+  jcoin:optional: true
+- name: last_time_afraid_abuse
+  type: string
+  title: Afraid for life or serious injury from abuse
+  description: '[...were afraid for your life or that you might be seriously injured
+    by the abuse?] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R1n
+  jcoin:optional: true
+- name: last_time_distressed_past
+  type: string
+  title: Distressed/upset about past
+  description: '[...became very distressed and upset when something reminded you of
+    the past?] When was the last time you. . .'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R2a
+  jcoin:optional: true
+- name: last_time_suicidal
+  type: string
+  title: Suicidal thoughts
+  description: '[...thought about ending your life or dying by suicide?] When was
+    the last time you. . .'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R2b
+  jcoin:optional: true
+- name: ever_dx_hiv
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: HIV/AIDS
+  description: '[Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by
+    a doctor or nurse that you had...'
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3a
+  jcoin:notes: If not Yes, skip to R3b.
+- name: first_dx_hiv
+  type: string
+  title: First diagnosis of HIV/AIDS
+  description: '[Human Immunodeficiency Virus, HIV or AIDS?] If yes, when were you
+    FIRST diagnosed?'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3a
+- name: ever_dx_hcv
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Hepatitis C
+  description: '[Hepatitis C? ] Were you ever told by a doctor or nurse that you had...'
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3b
+  jcoin:notes: If not Yes, skip to R3c.
+- name: first_dx_hcv
+  type: string
+  title: First diagnosis of Hepatitis C
+  description: '[Hepatitis C? ] If yes, when were you FIRST diagnosed?'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3b
+- name: ever_dx_hepb
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Hepatitis B
+  description: '[Hepatitis B? ] Were you ever told by a doctor or nurse that you had...'
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3c
+  jcoin:notes: If not Yes, skip to R3d.
+- name: first_dx_hepb
+  type: string
+  title: First diagnosis of Hepatitis B
+  description: '[Hepatitis B? ] If yes, when were you FIRST diagnosed?'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3c
+- name: ever_dx_std
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Other sexually transmitted diseases
+  description: '[Other sexually transmitted diseases or infections, such as syphilis.]
+    Were you ever told by a doctor or nurse that you had...'
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3d
+  jcoin:notes: If not Yes, skip to R3e.
+- name: first_dx_std
+  type: string
+  title: First diagnosis of other STDs
+  description: '[Other sexually transmitted diseases or infections, such as syphilis.]
+    If yes, when were you FIRST diagnosed?'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3d
+- name: ever_dx_tb
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Tuberculosis
+  description: '[Tuberculosis or TB?] Were you ever told by a doctor or nurse that
+    you had...'
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3e
+  jcoin:notes: If not Yes, skip to R3f.
+- name: first_dx_tb
+  type: string
+  title: First diagnosis of Tuberculosis
+  description: '[Tuberculosis or TB?] If yes, when were you FIRST diagnosed?'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3e
+- name: ever_dx_covid
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: COVID
+  description: '[Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse
+    that you had...'
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3f
+  jcoin:notes: If not Yes, skip to S1a.
+- name: first_dx_covid
+  type: string
+  title: First diagnosis of COVID
+  description: '[Coronavirus 19 or COVID19?] If yes, when were you FIRST diagnosed?'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Risk of Harms and Consequences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: R3f
+- name: last_drug_use
+  type: string
+  title: Last time drug use
+  description: '[... you used alcohol or other drugs weekly or more often?  ] When
+    was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S1a
+- name: last_getting_using_drugs
+  type: string
+  title: 'Last time drug use: getting, using, or recovering'
+  description: '[... You spent a lot of time either getting alcohol or other drugs,
+    using alcohol or other drugs, or recovering from the effects of alcohol or other
+    drugs (feeling sick)? ] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S1b
+- name: last_social_problems
+  type: string
+  title: 'Last time drug use: social dysfunction'
+  description: '[... You kept using alcohol or other drugs even though it was causing
+    social   problems, leading to fights, or getting you into trouble with other people?
+    ] When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S1c
+- name: last_work_life_disruption
+  type: string
+  title: 'Last time drug use: work or life dysfunction'
+  description: '[ your use of alcohol or other drugs caused you to give up or reduce
+    your involvement in activities at work, school, home or social events? ] When
+    was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S1d
+- name: last_withdrawal
+  type: string
+  title: 'Last time drug use: withdrawal'
+  description: '[... You had withdrawal problems from alcohol or other drugs like
+    shaky hands, throwing up, having trouble sitting still or sleeping, or you used
+    any  alcohol or other drugs to stop being sick or avoid withdrawal problems? ]
+    When was the last time you...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S1e
+- name: last_used_opioids
+  type: string
+  title: 'Last time drug use: any opioids'
+  description: '[... used any kind of heroin, fentanyl or other opioid?(such as codeine,
+    Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene,
+    morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?] When was
+    the last time...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S2a
+  jcoin:optional: true
+- name: last_opioid_overdose
+  type: string
+  title: 'Last time drug use: opioid overdose'
+  description: '[... had an opioid overdose? [used enough of the drug that it produced
+    a life-threatening reaction that required medical attention]] When was the last
+    time...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S2b
+  jcoin:optional: true
+- name: last_went_moud
+  type: string
+  title: 'Last time drug use: OUD medication-assisted treatment'
+  description: '[... went to any kind of medication assisted treatment for opioid
+    use disorder?] When was the last time...'
+  constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S2c
+  jcoin:optional: true
+- name: times_opioid_overdose
+  type: integer
+  title: Opioid Overdose Count
+  description: '[...overdose on heroin, fentanyl or other opioids?  [Overdose means
+    that you took enough of the drug that it caused a life-threatening reaction that
+    required medical attention] ] During the past xx days (since last assessment),
+    how many times did you (CAN CODE 0 IF NEVER ON S2b). . .'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3a
+  jcoin:notes: If 0, skip to S4.
+- name: times_naloxone
+  type: integer
+  title: 'Opioid Overdose Count: Receiving Naloxone'
+  description: '[...did you receive naloxone (Evzio or Narcan) to reverse your overdose?  ]
+    During the past xx days (since last assessment), how many times did you (CAN CODE
+    0 IF NEVER ON S2b). . .'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3b
+  jcoin:notes: If 0, skip to S4.
+- name: who_gave_naloxone_paramed
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Paramedic administered naloxone
+  description: Who administered the naloxone or Narcan? Paramedic/Ambulance
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_firefighter
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Firefighter administered naloxone
+  description: Who administered the naloxone or Narcan? Firefighter
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_police
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Police administered naloxone
+  description: Who administered the naloxone or Narcan? Police
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_er
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: ER doctor administered naloxone
+  description: Who administered the naloxone or Narcan? Emergency room doctor
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_spouse
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Spouse administered naloxone
+  description: Who administered the naloxone or Narcan? Spouse/significant other
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_partner
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Running partner administered naloxone
+  description: Who administered the naloxone or Narcan? Running partner
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_parent
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Parent administed naloxone
+  description: Who administered the naloxone or Narcan? Parent
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_friend
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Friend administered naloxone
+  description: Who administered the naloxone or Narcan? Friend
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_stranger
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Stranger administered naloxone
+  description: Who administered the naloxone or Narcan? Stranger
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_self
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Self administered naloxone
+  description: Who administered the naloxone or Narcan? Self
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_other
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Other administered naloxone
+  description: Who administered the naloxone or Narcan? Other
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: who_gave_naloxone_other_desc
+  type: string
+  title: 'Describe other who administered naloxone'
+  description: '[Describe] Who administered the naloxone or Narcan?'
+  constraints:
+    maxLength: 80
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3c
+  jcoin:optional: true
+- name: drugs_before_od_heroin
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Heroin taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Heroin
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_fentanyl
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Fentanyl taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Fentanyl
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_opioids
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Other opioids taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Other opioids
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_crack
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Crack/cocaine taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Crack or other forms of cocaine
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_meth
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Methamphetamines taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Methamphetamines, amphetamines or other forms of speed
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_xanax
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Xanax taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Xanax, benzodiazepines, or other anti-anxiety drugs or tranquilizers
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_marijuana
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Marijuana taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Marijuana
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_alcohol
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Alcohol taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Alcohol
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_other
+  type: boolean
+  trueValues:
+  - Checked
+  falseValues:
+  - Unchecked
+  title: Other drug(s) taken 4 hrs before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? Other
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: drugs_before_od_other_desc
+  type: string
+  title: Describe other drug(s) taken 4 hrs before overdose
+  description: '[Describe] What other drugs had you taken in the 4 hours before you overdosed?'
+  constraints:
+    maxLength: 80
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3d
+  jcoin:optional: true
+- name: times_ems_after_overdose
+  type: integer
+  title: Emergency Medical Service Following Overdose
+  description: '[...receive emergency medical service following an overdose?] During
+    the past xx days (since last assessment), how many times did you (CAN CODE 0 IF
+    NEVER ON S2b). . .'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3e
+  jcoin:optional: true
+- name: times_er_after_overdose
+  type: integer
+  title: Emergency Department Visit Count Following Overdose
+  description: '[...go to the emergency department following an overdose?] During
+    the past xx days (since last assessment), how many times did you (CAN CODE 0 IF
+    NEVER ON S2b). . .'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3f
+  jcoin:optional: true
+- name: times_hospital_after_overdose
+  type: integer
+  title: Hospital Admissions Count Following Overdose
+  description: '[...get admitted to the hospital following an overdose?] During the
+    past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER
+    ON S2b). . .'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3g
+  jcoin:optional: true
+- name: tx_refer_after_overdose
+  type: integer
+  title: Substance Use Treatment Referral Count Following Overdose
+  description: '[...receive a referral to substance use treatment from the police,
+    EMS, ED or hospital staff?] During the past xx days (since last assessment), how
+    many times did you (CAN CODE 0 IF NEVER ON S2b). . .'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S3h
+  jcoin:optional: true
+- name: days_drug_use
+  type: integer
+  title: Drug Use Count
+  description: '[...on how many days did you use any heroin, fentanyl, opioids, alcohol,
+    marijuana or other illicit drugs?    ] During the past xx days (since last assessment),
+    on how many days did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4a
+- name: days_alcohol_use
+  type: integer
+  title: Alcohol Use Count
+  description: '[...how many times did you drink any kind of alcohol (beer, gin, rum,
+    scotch, tequila, whiskey, wine or mixed drinks)?    ] During the past xx days
+    (since last assessment), on how many days did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4b
+- name: days_alcohol_binge
+  type: integer
+  title: 'Alcohol Use Count: Binge Drinking'
+  description: '[...how many times did you have 5 or more drinks?    ] During the
+    past xx days (since last assessment), on how many days did you. . . [Write 0 days
+    if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4c
+- name: days_medical_marijuana
+  type: integer
+  title: 'Marijuana use count: medical'
+  description: '[...how many times did you use medical marijuana that was obtained
+    from a dispensary with your own recommendation card or prescription?    ] During
+    the past xx days (since last assessment), on how many days did you. . . [Write
+    0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4d
+  jcoin:optional: true
+- name: days_other_marijuana
+  type: integer
+  title: 'Marijuana use count: Not own'
+  description: '[... how many times did you use other marijuana, including hashish,
+    edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis,
+    herb, pot, reefer, weed), or medical marijuana that was not your own?     ] During
+    the past xx days (since last assessment), on how many days did you. . . [Write
+    0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4e
+  jcoin:optional: true
+- name: days_heroin
+  type: integer
+  title: 'Opioid use count: Heroin'
+  description: '[... how many times did you use heroin (alone or mixed with other
+    drugs)?     ] During the past xx days (since last assessment), on how many days
+    did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4f
+- name: days_fentanyl
+  type: integer
+  title: 'Opioid use count: Fentanyl'
+  description: '[... how many times did you use fentanyl (alone or mixed with other
+    drugs)?    ] During the past xx days (since last assessment), on how many days
+    did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4g
+- name: days_non_rx_methadone
+  type: integer
+  title: 'Opioid use count: Street Methadone'
+  description: '[... how many times did you use nonprescription or street methadone?     ]
+    During the past xx days (since last assessment), on how many days did you. . .
+    [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4h
+  jcoin:optional: true
+- name: days_non_rx_suboxone
+  type: integer
+  title: 'Opioid use count: Suboxone'
+  description: '[... how many times did you use use nonprescription or street Suboxone?       ]
+    During the past xx days (since last assessment), on how many days did you. . .
+    [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4j
+  jcoin:optional: true
+- name: days_other_opioids
+  type: integer
+  title: 'Opioid use count: other'
+  description: '[... how many times did you use other opioids, opiates, painkillers,
+    or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi,
+    OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with
+    codeine, Vicodin, Zohydro)?       ] During the past xx days (since last assessment),
+    on how many days did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4k
+- name: days_cocaine
+  type: integer
+  title: Cocaine use count
+  description: '[... how many times did you use crack, smoked rock, freebase, or other
+    forms of cocaine?       ] During the past xx days (since last assessment), on
+    how many days did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4m
+- name: days_amphetamines
+  type: integer
+  title: Speed use count
+  description: '[... how many times did you use any methamphetamines, amphetamines,
+    or other forms of speed?       ] During the past xx days (since last assessment),
+    on how many days did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4n
+- name: days_benzo
+  type: integer
+  title: Benzodiazapine, anti-anxiety, and tranquilizer use count
+  description: '[... how many times did you use any benzodiazepines, anti-anxiety
+    drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin,
+    Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed,
+    Xanax)?      ] During the past xx days (since last assessment), on how many days
+    did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4p
+- name: days_other_drugs
+  type: integer
+  title: 'Drug use count: other'
+  description: '[...on how many days did you use any other drug that has not been
+    mentioned (such as hallucinogens, downers)? ] During the past xx days (since last
+    assessment), on how many days did you. . . [Write 0 days if no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4z
+  jcoin:optional: true
+- name: other_drug_describe
+  type: string
+  title: 'Drug use: description of other drugs'
+  description: '[...on how many days did you use any other drug that has not been
+    mentioned (such as hallucinogens, downers)? (Please describe )] During the past
+    xx days (since last assessment), on how many days did you. . . [Write 0 days if
+    no use]'
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: S4z
+  jcoin:optional: true
+- name: days_confined_no_use
+  type: integer
+  title: Place of No Opioid Use (Jail, Hospital, etc)
+  description: During the past 90 days (prior to entering jail or prison/ since your
+    last assessment), on how many days have you been in a jail, hospital or other
+    place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana
+    or other drugs? (USE 0 FOR NONE)
+  jcoin:section: Substance Use
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: s5
+
+
+
 - name: intv_while_incarc
   type: boolean
   trueValues:
