@@ -5045,8 +5045,8 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m1
-  jcoin:notes: If Checked, skip to j1.
+  jcoin:originalName: M1
+  jcoin:notes: If Checked, skip to J1.
 - name: prefer_oud_meds
   type: boolean
   trueValues:
@@ -5060,7 +5060,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_detox
   type: boolean
   trueValues:
@@ -5074,7 +5074,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_op
   type: boolean
   trueValues:
@@ -5088,7 +5088,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_iop
   type: boolean
   trueValues:
@@ -5102,7 +5102,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_residential
   type: boolean
   trueValues:
@@ -5116,7 +5116,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_other_tx
   type: boolean
   trueValues:
@@ -5130,7 +5130,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_other_specify
   type: string
   title: Preferred OUD treatment: Other specified
@@ -5140,7 +5140,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_no_treatment
   type: boolean
   trueValues:
@@ -5154,7 +5154,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_oud_dk
   type: boolean
   trueValues:
@@ -5168,7 +5168,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m2
+  jcoin:originalName: M2
 - name: prefer_moud_type
   type: string
   title: Preferred OUD medication
@@ -5182,7 +5182,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m3
+  jcoin:originalName: M3
   jcoin:notes: Ask only if m2 equals OUD medication.
 - name: prefer_which_bup
   type: string
@@ -5197,7 +5197,7 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m4
+  jcoin:originalName: M4
   jcoin:notes: Ask only if m3 equals Buprenorphine/Suboxone.
 - name: prefer_which_naloxone
   type: string
@@ -5211,5 +5211,518 @@ fields:
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:originalName: m5
+  jcoin:originalName: M5
   jcoin:notes: Ask only if m3 equals Naltrexone/Vivitrol.
+- name: days_illegal_activity
+  type: integer
+  title: Days involved in illegal activities
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1
+  jcoin:notes: If 0, skip to J2.
+- name: times_drug_possession
+  type: integer
+  title: Drug possession
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you been in possession of small amounts of drugs?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a1
+  jcoin:optional: true
+- name: times_public_drunk
+  type: integer
+  title: Drunkenness or other liquor law violations
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you been drunk or high in public?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a2
+  jcoin:optional: true
+- name: times_dui
+  type: integer
+  title: Driving under the influence or while intoxicated
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you driven a vehicle while under the influence of alcohol or drugs?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a3
+  jcoin:optional: true
+- name: times_drug_dealing
+  type: integer
+  title: Possession, dealing, distribution or sale of drugs
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you sold, distributed or helped to make illegal drugs?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a4
+  jcoin:optional: true
+- name: times_vandalism
+  type: integer
+  title: Vandalism or property destruction
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you purposely damaged or destroyed property that did not belong to you?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a5
+- name: times_stolen_goods
+  type: integer
+  title: Receiving, possessing or selling stolen goods
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you bought, received, possessed or sold any stolen goods?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a6
+- name: times_forgery
+  type: integer
+  title: Forgery, fraud or embezzlement
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you passed bad checks, forged or altered a prescription, or took money illegally from an employer?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a7
+- name: times_shoplift
+  type: integer
+  title: Shoplifting
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you taken something from a store without paying for it?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a8
+  jcoin:optional: true
+- name: times_theft
+  type: integer
+  title: Larceny or theft
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you other than from a store, taken money or property that didn''t belong to you 
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a9
+- name: times_burglary
+  type: integer
+  title: Burglary or breaking and entering
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you broken into a house or building to steal something or just to look around?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a10
+- name: times_auto_theft
+  type: integer
+  title: Motor vehicle theft
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you taken a car without people in it that didn''t belong to you?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a11
+  jcoin:optional: true
+- name: times_carjacking
+  type: integer
+  title: Carjacking
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you taken a car from someone who was in it?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a12
+  jcoin:notes: Optional during baseline.
+- name: times_assault
+  type: integer
+  title: Simple assault or battery
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you hit someone or gotten into a physical fight?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a13
+  jcoin:optional: true
+- name: times_robbery
+  type: integer
+  title: Robbery
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you used a weapon, force, or strong-arm methods to get money or things from a person?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a14
+  jcoin:optional: true
+- name: times_aggravated_assault
+  type: integer
+  title: Aggravated assault or battery
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you hurt someone badly enough they needed bandages or a doctor?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a15
+  jcoin:optional: true
+- name: times_rape
+  type: integer
+  title: Forcible rape
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you made someone have sex with you by force when they did not want to have sex?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a16
+  jcoin:optional: true
+- name: times_homicide
+  type: integer
+  title: Murder, homicide or non-negligent manslaughter
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you been involved in the death or murder of another person, including accidents?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a17
+  jcoin:optional: true
+- name: times_arson
+  type: integer
+  title: Arson
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you intentionally set a building, car or other property on fire?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a18
+- name: times_prostitution
+  type: integer
+  title: Prostitution, pimping or commercialized sex
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you traded sex for food, drugs or money?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a19
+  jcoin:optional: true
+- name: times_other_unlawful
+  type: integer
+  title: Other unlawful activities
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you done something else that would have gotten you into trouble with the police if they had known about it (e.g., carrying a weapon, gang involvement, domestic violence, trespass, gambling,  disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a99
+- name: other_unlawful_spec
+  type: string
+  title: Other unlawful activity specified
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times have you done something else that would have gotten you into trouble with the police if they had known about it? Other specified
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J1a99
+- name: number_charged_arrests
+  type: integer
+  title: Number of times arrested and charged
+  description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times were you arrested and charged?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2
+  jcoin:notes: If 0, skip to J3a.
+- name: number_arrest_possession
+  type: integer
+  title: Arrests for drug possession
+  description: Number of arrests for drug possession (including for small amounts)
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2a
+  jcoin:optional: true
+- name: number_arrest_drunk
+  type: integer
+  title: Arrests for drunkenness
+  description: Number of arrests for drunkenness or other liquor law violations
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2b
+  jcoin:optional: true
+- name: number_arrest_dui
+  type: integer
+  title: Arrests for DUI
+  description: Number of arrests for driving under the influence or while intoxicated
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2c
+  jcoin:optional: true
+- name: number_arrest_drug_dealing
+  type: integer
+  title: Arrests for drugs
+  description: Number of arrests for possession, dealing, distribution or sale of drugs
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2d
+  jcoin:optional: true
+- name: number_arrest_vandalism
+  type: integer
+  title: Arrests for vandalism or property destruction
+  description: Number of arrests for vandalism or property destruction
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2e
+  jcoin:optional: true
+- name: number_arrest_stolen_goods
+  type: integer
+  title: Arrests for stolen goods
+  description: Number of arrests for receiving, possessing or selling stolen goods
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2f
+  jcoin:optional: true
+- name: number_arrest_forgery
+  type: integer
+  title: Arrests for forgery
+  description: Number of arrests for forgery, fraud or embezzlement
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2g
+  jcoin:optional: true
+- name: number_arrest_shoplifting
+  type: integer
+  title: Arrests for shoplifting
+  description: Number of arrests for shoplifting
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2h
+  jcoin:optional: true
+- name: number_arrest_theft
+  type: integer
+  title: Arrests for larceny or theft
+  description: Number of arrests for larceny or theft
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2i
+  jcoin:optional: true
+- name: number_arrest_burglary
+  type: integer
+  title: Arrests for burglary
+  description: Number of arrests for burglary or breaking and entering
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2j
+  jcoin:optional: true
+- name: number_arrest_auto_theft
+  type: integer
+  title: Arrests for vehicle theft
+  description: Number of arrests for motor vehicle theft
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2k
+  jcoin:optional: true
+- name: number_arrest_carjacking
+  type: integer
+  title: Arrests for car jacking
+  description: Number of arrests for car jacking
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2l
+  jcoin:optional: true
+- name: number_arrest_assault
+  type: integer
+  title: Arrests for simple assault and battery
+  description: Number of arrests for simple assault or battery
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2m
+  jcoin:optional: true
+- name: number_arrest_robbery
+  type: integer
+  title: Arrests for robbery
+  description: Number of arrests for robbery
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2n
+  jcoin:optional: true
+- name: number_arrest_aggravated
+  type: integer
+  title: Arrests for aggravated assault or battery
+  description: Number of arrests for aggravated assault or battery
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2o
+  jcoin:optional: true
+- name: number_arrest_rape
+  type: integer
+  title: Arrests for rape
+  description: Number of arrests for forcible rape
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2p
+  jcoin:optional: true
+- name: number_arrest_homicide
+  type: integer
+  title: Arrests for murder
+  description: Number of arrests for murder, homicide or non-negligent manslaughter
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2q
+  jcoin:optional: true
+- name: number_arrest_arson
+  type: integer
+  title: Arrests for arson
+  description: Number of arrests for arson
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2r
+- name: number_arrest_prostitution
+  type: integer
+  title: Arrests for prostitution
+  description: Number of arrests for prostitution, pimping or commercialized sex
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2s
+  jcoin:optional: true
+- name: number_arrest_other
+  type: integer
+  title: Arrests for other charges
+  description: Number of arrests for other charges (e.g., carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J2t
+  jcoin:optional: true
+- name: days_electronic_monitoring
+  type: integer
+  title: Days on electronic monitoring
+  description: During the past 90 days (or since your last assessment), how many days have you been on electronic monitoring?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J3a
+- name: days_house_arrest
+  type: integer
+  title: Days on house arrest
+  description: During the past 90 days (or since your last assessment), how many days have you been on house arrest?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J3b
+- name: days_jail
+  type: integer
+  title: Days in jail
+  description: During the past 90 days (or since your last assessment), how many days have you been in jail?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J3c
+- name: days_prison
+  type: integer
+  title: Days in prison
+  description: During the past 90 days (or since your last assessment), how many days have you been in prison?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J3d
+- name: currently_incarcerated
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
+  title: Currently in jail
+  description: Are you currently in jail or prison?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J3e
+  jcoin:notes: If No, skip to J4.
+- name: length_current_incarceration
+  type: integer
+  title: Days most recently in jail
+  description: How long have you been in jail or prison? (just this episode)
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J3f
+- name: days_parole
+  type: integer
+  title: Days on parole
+  description: During the past 90 days (or since your last assessment), how many days have you been on parole?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J4a
+- name: days_probation
+  type: integer
+  title: Days on probation
+  description: During the past 90 days (or since your last assessment), how many days have you been on probation?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J4b
+- name: days_other_supervision
+  type: integer
+  title: Days on other kind of community supervision
+  description: During the past 90 days (or since your last assessment), how many days have you been on any other kind of community supervision?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J4c
+- name: days_met_probation_officer
+  type: integer
+  title: Days met with probation or parole officer
+  description: During the past 90 days (or since your last assessment), how many days have you met with your probation or parole officer?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J4d
+- name: days_trouble_probation_officer
+  type: integer
+  title: Days in trouble with probation or parole officer
+  description: During the past 90 days (or since your last assessment), how many days have you been in trouble with your probation or parole officer?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: J4e
+- name: number_lifetime_arrests
+  type: integer
+  title: Lifetime arrests
+  description: During your lifetime, how many times in your life have you been arrested including as a juvenile?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:originalName: J5a
+- name: age_first_arrest
+  type: integer
+  title: Age at first arrest
+  description: How old were you the first time you were arrested?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:originalName: J5b
+- name: years_lifetime_incarceration
+  type: number
+  title: Lifetime years in detention, jail or prison
+  description: How much total time have you spent in detention, jail or prison during your lifetime? Years
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:originalName: J5c
+- name: months_lifetime_incarceration
+  type: number
+  title: Lifetime months in detention, jail, or prison
+  description: How much total time have you spent in detention, jail or prison during your lifetime? Months
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:originalName: J5c
+- name: times_guilty_sentenced
+  type: integer
+  title: Total times found guilty and sentenced
+  description: How many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:originalName: J5d
+- name: age_first_convicted
+  type: integer
+  title: Age at first conviction
+  description: How old were you the first time you were adjudicated or convicted?
+  jcoin:section: Justice Involvement
+  jcoin:baseline: true
+  jcoin:originalName: J5e
