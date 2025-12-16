@@ -142,6 +142,211 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:notes: Shifted for de-identification
+- name: admin_method
+  type: string
+  title: Method of administration
+  description: How were the questions administered?
+  constraints:
+    enum:
+    - Self-administered
+    - Orally administered by staff
+    - Orally administered by others
+    - Other (please describe)
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM1
+  jcoin:optional: true
+- name: admin_method_oth
+  type: string
+  title: Other method of administration described
+  description: How were the questions administered? Other described
+  constraints:
+    maxLength: 80
+  jcoin:section: Administration
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM1
+  jcoin:optional: true
+  jcoin:notes: Skip if admin_method is not equal to Other.
+- name: admin_mode
+  type: string
+  title: Mode of administration
+  description: What was the mode of administration?
+  constraints:
+    enum:
+    - Pen & paper
+    - On a computer or tablet
+    - Other (please describe)
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM2
+  jcoin:optional: true
+- name: admin_mode_oth
+  type: string
+  title: Other mode of administration described
+  description: What was the mode of administration? Other described
+  constraints:
+    maxLength: 80
+  jcoin:section: Administration
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM2
+  jcoin:optional: true
+  jcoin:notes: Skip if admin_mode is not equal to Other.
+- name: language
+  type: string
+  title: Primary language
+  description: What was the primary language in which it was conducted?
+  constraints:
+    enum:
+    - English
+    - Spanish
+    - Other (please describe)
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM3
+  jcoin:optional: true
+- name: language_oth
+  type: string
+  title: Other language described
+  description: What was the primary language in which it was conducted? Other described
+  constraints:
+    maxLength: 80
+  jcoin:section: Administration
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM3
+  jcoin:optional: true
+  jcoin:notes: Skip if language is not equal to Other.
+- name: interview_env_noise
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Noise during interview
+  description: What problems prevented a quiet and private environment? Noise or other frequent distractions
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+- name: interview_env_interupt
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Interruptions during interview
+  description: What problems prevented a quiet and private environment? Frequent interruptions
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+- name: interview_env_people
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Other people present during interview
+  description: What problems prevented a quiet and private environment? Other people within ear shot
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+- name: interview_env_police
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Police or guards present during interview
+  description: What problems prevented a quiet and private environment? Police, guards, probation/parole officers, social workers or other officials present
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+- name: interview_env_monitor
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Possible electronic monitoring of interview
+  description: What problems prevented a quiet and private environment? Possible speaker or telephone monitoring of interview
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+- name: interview_env_oth
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Other problems during interview
+  description: What problems prevented a quiet and private environment? Other (please describe)
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+- name: interview_env_oth_desc
+  type: string
+  title: Other problems during interview described
+  description: What problems prevented a quiet and private environment? Other described
+  constraints:
+    maxLength: 80
+  jcoin:section: Administration
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM8
+  jcoin:optional: true
+  jcoin:notes: Skip if interview_env_oth is not checked.
+- name: interview_duration
+  title: Interview duration (in minutes)
+  description: What was the interview duration (time on task) in minutes?
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM10
+  jcoin:optional: true
+- name: interview_days
+  title: Interview days
+  description: Over how many different days was the interview conducted?
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM11
+  jcoin:optional: true
+- name: interview_comments
+  title: Comments regarding assessment
+  description: Do you have any additional comments about the administration of the assessment that should be considered when interpreting this assessment?
+  jcoin:section: Administrative
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: AM99
+  jcoin:optional: true
 - name: dob
   type: date
   title: Date of birth
