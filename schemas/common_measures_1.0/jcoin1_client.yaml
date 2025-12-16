@@ -5033,3 +5033,183 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+- name: oud_tx_not_appropriate
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Not a candidate for OUD treatment
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m1
+  jcoin:notes: If Checked, skip to j1.
+- name: prefer_oud_meds
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: OUD medication
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? OUD medication (e.g., methadone, buprenorphine/suboxone, naltrexone/vivitrol)
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_detox
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: Detox
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Detox
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_op
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: Outpatient counseling
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Outpatient counseling
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_iop
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: Intensive outpatient
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Intensive outpatient
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_residential
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: Residential treatment
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Residential treatment
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_other_tx
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: Other (specify)
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Other (specify)
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_other_specify
+  type: string
+  title: Preferred OUD treatment: Other specified
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Other specified
+  constraints:
+    maxLength: 80
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_no_treatment
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: No treatment
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? No treatment
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_oud_dk
+  type: boolean
+  trueValues:
+  - Checked
+  - 'Yes'
+  falseValues:
+  - Unchecked
+  - 'No'
+  title: Preferred OUD treatment: Don''t know/No preference
+  description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Don''t know/No preference
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m2
+- name: prefer_moud_type
+  type: string
+  title: Preferred OUD medication
+  description: Which OUD medication treatment type would you most prefer to receive if it were available to you now?
+  constraints:
+    enum:
+    - Methadone
+    - Buprenorphine/Suboxone
+    - Naltrexone/Vivitrol
+    - Don''t know/No preference
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m3
+  jcoin:notes: Ask only if m2 equals OUD medication.
+- name: prefer_which_bup
+  type: string
+  title: Type of buprenorphine preferred
+  description: Which type of buprenorphine?
+  constraints:
+    enum:
+    - I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone)
+    - I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi)
+    - I would prefer to receive the 6-month buprenorphine implant
+    - Don''t know/No preference
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m4
+  jcoin:notes: Ask only if m3 equals Buprenorphine/Suboxone.
+- name: prefer_which_naloxone
+  type: string
+  title: Type of naltrexone preferred
+  description: Which type of naltrexone?
+  constraints:
+    enum:
+    - I would prefer to receive daily naltrexone oral (Revia)
+    - I would prefer to receive monthly naltrexone injections (Vivitrol)
+    - Don''t know/No preference
+  jcoin:section: Treatment Preferences
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: m5
+  jcoin:notes: Ask only if m3 equals Naltrexone/Vivitrol.
