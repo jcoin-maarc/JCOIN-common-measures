@@ -3687,8 +3687,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Transferred to another program
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You transferred to another program
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Transferred to another program'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3700,8 +3700,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Completed treatment
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You completed the planned course of treatment
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Completed treatment'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3713,8 +3713,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Incarcerated
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You were incarcerated
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Incarcerated'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3726,8 +3726,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Dissatisfaction
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Dissatisfaction'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3739,8 +3739,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: No insurance or ability to pay
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: No insurance or ability to pay'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3752,8 +3752,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Other problems or challenges
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Other problems or challenges'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3765,8 +3765,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Lack of support
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Lack of support'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3778,8 +3778,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Asked to leave program
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Asked to leave program'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3791,15 +3791,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Other (describe)
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: Other (describe)
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Other (describe)'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_bup_reason_oth_desc
   type: string
-  title: Reason stopped buprenorphine-naloxone or buprenorphine daily: Other described
-  description: Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: Other described
+  title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Other described'
+  description: 'Reason for stopping buprenorphine-naloxone or buprenorphine daily sublingual: Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3888,8 +3888,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped Buprenorphine monthly injection (SUBLOCADE): Transferred to another program
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You transferred to another program
+  title: 'Reason stopped Buprenorphine monthly injection (SUBLOCADE): Transferred to another program'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3901,8 +3901,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Completed treatment
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You completed the planned course of treatment
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Completed treatment'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3914,8 +3914,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Incarcerated
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You were incarcerated
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Incarcerated'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3927,8 +3927,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Dissatisfaction
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Dissatisfaction'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3940,8 +3940,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): No insurance or ability to pay
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): No insurance or ability to pay'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3953,8 +3953,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Other problems or challenges
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Other problems or challenges'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3966,8 +3966,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Lack of support
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Lack of support'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3979,8 +3979,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Asked to leave program
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Asked to leave program'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -3992,15 +3992,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Other (describe)
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): Other (describe)
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Other (describe)'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_sub_reason_oth_desc
   type: string
-  title: Reason stopped buprenorphine monthly injection (SUBLOCADE): Other described
-  description: Reason for stopping buprenorphine monthly injection (SUBLOCADE): Other described
+  title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Other described'
+  description: 'Reason for stopping buprenorphine monthly injection (SUBLOCADE): Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4089,8 +4089,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Transferred to another program
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You transferred to another program
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Transferred to another program'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4102,8 +4102,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Completed treatment
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You completed the planned course of treatment
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Completed treatment'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4115,8 +4115,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Incarcerated
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You were incarcerated
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Incarcerated'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4128,8 +4128,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Dissatisfaction
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Dissatisfaction'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4141,8 +4141,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): No insurance or ability to pay
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): No insurance or ability to pay'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4154,8 +4154,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Other problems or challenges
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Other problems or challenges'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4167,8 +4167,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Lack of support
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Lack of support'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4180,8 +4180,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Asked to leave program
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Asked to leave program'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4193,15 +4193,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Other (describe)
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): Other (describe)
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Other (describe)'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_wbrix_reason_oth_desc
   type: string
-  title: Reason stopped buprenorphine weekly injection (BRIXADI): Other described
-  description: Reason for stopping buprenorphine weekly injection (BRIXADI): Other described
+  title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Other described'
+  description: 'Reason for stopping buprenorphine weekly injection (BRIXADI): Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4290,8 +4290,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Transferred to another program
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You transferred to another program
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Transferred to another program'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4303,8 +4303,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Completed treatment
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You completed the planned course of treatment
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Completed treatment'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4316,8 +4316,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Incarcerated
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You were incarcerated
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Incarcerated'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4329,8 +4329,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Dissatisfaction
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Dissatisfaction'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4342,8 +4342,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): No insurance or ability to pay
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): No insurance or ability to pay'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4355,8 +4355,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Other problems or challenges
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Other problems or challenges'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4368,8 +4368,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Lack of support
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Lack of support'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4381,8 +4381,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Asked to leave program
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Asked to leave program'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4394,15 +4394,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Other (describe)
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): Other (describe)
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Other (describe)'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_mbrix_reason_oth_desc
   type: string
-  title: Reason stopped buprenorphine monthly injection (BRIXADI): Other described
-  description: Reason for stopping buprenorphine monthly injection (BRIXADI): Other described
+  title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Other described'
+  description: 'Reason for stopping buprenorphine monthly injection (BRIXADI): Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4491,8 +4491,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Transferred to another program
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You transferred to another program
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Transferred to another program'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4504,8 +4504,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Completed treatment
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You completed the planned course of treatment
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Completed treatment'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4517,8 +4517,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Incarcerated
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You were incarcerated
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Incarcerated'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4530,8 +4530,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Dissatisfaction
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Dissatisfaction'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4543,8 +4543,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): No insurance or ability to pay
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): No insurance or ability to pay'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4556,8 +4556,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Other problems or challenges
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Other problems or challenges'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4569,8 +4569,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Lack of support
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Lack of support'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4582,8 +4582,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Asked to leave program
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Asked to leave program'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4595,15 +4595,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Other (describe)
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): Other (describe)
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Other (describe)'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_prob_reason_oth_desc
   type: string
-  title: Reason stopped buprenorphine 6-month implant (Probuphine): Other described
-  description: Reason for stopping buprenorphine 6-month implant (Probuphine): Other described
+  title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Other described'
+  description: 'Reason for stopping buprenorphine 6-month implant (Probuphine): Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4692,8 +4692,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Transferred to another program
-  description: Reason for stopping naltrexone (oral): You transferred to another program
+  title: 'Reason stopped naltrexone (oral): Transferred to another program'
+  description: 'Reason for stopping naltrexone (oral): You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4705,8 +4705,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Completed treatment
-  description: Reason for stopping naltrexone (oral): You completed the planned course of treatment
+  title: 'Reason stopped naltrexone (oral): Completed treatment'
+  description: 'Reason for stopping naltrexone (oral): You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4718,8 +4718,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Incarcerated
-  description: Reason for stopping naltrexone (oral): You were incarcerated
+  title: 'Reason stopped naltrexone (oral): Incarcerated'
+  description: 'Reason for stopping naltrexone (oral): You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4731,8 +4731,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Dissatisfaction
-  description: Reason for stopping naltrexone (oral): You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped naltrexone (oral): Dissatisfaction'
+  description: 'Reason for stopping naltrexone (oral): You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4744,8 +4744,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): No insurance or ability to pay
-  description: Reason for stopping naltrexone (oral): You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped naltrexone (oral): No insurance or ability to pay'
+  description: 'Reason for stopping naltrexone (oral): You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4757,8 +4757,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Other problems or challenges
-  description: Reason for stopping naltrexone (oral): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped naltrexone (oral): Other problems or challenges'
+  description: 'Reason for stopping naltrexone (oral): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4770,8 +4770,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Lack of support
-  description: Reason for stopping naltrexone (oral): You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped naltrexone (oral): Lack of support'
+  description: 'Reason for stopping naltrexone (oral): You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4783,8 +4783,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Asked to leave program
-  description: Reason for stopping naltrexone (oral): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped naltrexone (oral): Asked to leave program'
+  description: 'Reason for stopping naltrexone (oral): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4796,15 +4796,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone (oral): Other (describe)
-  description: Reason for stopping naltrexone (oral): Other (describe)
+  title: 'Reason stopped naltrexone (oral): Other (describe)'
+  description: 'Reason for stopping naltrexone (oral): Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_nal_reason_oth_desc
   type: string
-  title: Reason stopped naltrexone (oral): Other described
-  description: Reason for stopping naltrexone (oral): Other described
+  title: 'Reason stopped naltrexone (oral): Other described'
+  description: 'Reason for stopping naltrexone (oral): Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4893,8 +4893,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Transferred to another program
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You transferred to another program
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Transferred to another program'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4906,8 +4906,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Completed treatment
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You completed the planned course of treatment
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Completed treatment'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4919,8 +4919,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Incarcerated
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You were incarcerated
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Incarcerated'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4932,8 +4932,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Dissatisfaction
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Dissatisfaction'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4945,8 +4945,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): No insurance or ability to pay
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): No insurance or ability to pay'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4958,8 +4958,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Other problems or challenges
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Other problems or challenges'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4971,8 +4971,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Lack of support
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Lack of support'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4984,8 +4984,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Asked to leave program
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Asked to leave program'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -4997,15 +4997,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Other (describe)
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): Other (describe)
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Other (describe)'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_viv_reason_oth_desc
   type: string
-  title: Reason stopped naltrexone monthly injection (Vivitrol): Other described
-  description: Reason for stopping naltrexone monthly injection (Vivitrol): Other described
+  title: 'Reason stopped naltrexone monthly injection (Vivitrol): Other described'
+  description: 'Reason for stopping naltrexone monthly injection (Vivitrol): Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5094,8 +5094,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Transferred to another program
-  description: Reason for stopping methadone daily: You transferred to another program
+  title: 'Reason stopped methadone daily: Transferred to another program'
+  description: 'Reason for stopping methadone daily: You transferred to another program'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5107,8 +5107,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Completed treatment
-  description: Reason for stopping methadone daily: You completed the planned course of treatment
+  title: 'Reason stopped methadone daily: Completed treatment'
+  description: 'Reason for stopping methadone daily: You completed the planned course of treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5120,8 +5120,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Incarcerated
-  description: Reason for stopping methadone daily: You were incarcerated
+  title: 'Reason stopped methadone daily: Incarcerated'
+  description: 'Reason for stopping methadone daily: You were incarcerated'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5133,8 +5133,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Dissatisfaction
-  description: Reason for stopping methadone daily: You left because of dissatisfaction with medication, counselor or treatment
+  title: 'Reason stopped methadone daily: Dissatisfaction'
+  description: 'Reason for stopping methadone daily: You left because of dissatisfaction with medication, counselor or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5146,8 +5146,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: No insurance or ability to pay
-  description: Reason for stopping methadone daily: You left because you did not have insurance or ability to pay for medication or treatment
+  title: 'Reason stopped methadone daily: No insurance or ability to pay'
+  description: 'Reason for stopping methadone daily: You left because you did not have insurance or ability to pay for medication or treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5159,8 +5159,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Other problems or challenges
-  description: Reason for stopping methadone daily: You left because of other logistical problems or challenges (clinic hours, transportation, childcare)
+  title: 'Reason stopped methadone daily: Other problems or challenges'
+  description: 'Reason for stopping methadone daily: You left because of other logistical problems or challenges (clinic hours, transportation, childcare)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5172,8 +5172,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Lack of support
-  description: Reason for stopping methadone daily: You left because of lack of support from family or friends for being in treatment
+  title: 'Reason stopped methadone daily: Lack of support'
+  description: 'Reason for stopping methadone daily: You left because of lack of support from family or friends for being in treatment'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5185,8 +5185,8 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Asked to leave program
-  description: Reason for stopping methadone daily: You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)
+  title: 'Reason stopped methadone daily: Asked to leave program'
+  description: 'Reason for stopping methadone daily: You were asked to leave or administratively discharged from program. (e.g. repeated positive tests, non-attendance)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5198,15 +5198,15 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Reason stopped methadone daily: Other (describe)
-  description: Reason for stopping methadone daily: Other (describe)
+  title: 'Reason stopped methadone daily: Other (describe)'
+  description: 'Reason for stopping methadone daily: Other (describe)'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
 - name: moud_meth_reason_oth_desc
   type: string
-  title: Reason stopped methadone daily: Other described
-  description: Reason for stopping methadone daily: Other described
+  title: 'Reason stopped methadone daily: Other described'
+  description: 'Reason for stopping methadone daily: Other described'
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
@@ -5260,7 +5260,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: OUD medication
+  title: 'Preferred OUD treatment: OUD medication'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? OUD medication (e.g., methadone, buprenorphine/suboxone, naltrexone/vivitrol)
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5274,7 +5274,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: Detox
+  title: 'Preferred OUD treatment: Detox'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Detox
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5288,7 +5288,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: Outpatient counseling
+  title: 'Preferred OUD treatment: Outpatient counseling'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Outpatient counseling
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5302,7 +5302,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: Intensive outpatient
+  title: 'Preferred OUD treatment: Intensive outpatient'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Intensive outpatient
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5316,7 +5316,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: Residential treatment
+  title: 'Preferred OUD treatment: Residential treatment'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Residential treatment
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5330,7 +5330,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: Other (specify)
+  title: 'Preferred OUD treatment: Other (specify)'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Other (specify)
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5338,7 +5338,7 @@ fields:
   jcoin:originalName: M2
 - name: prefer_oud_other_specify
   type: string
-  title: Preferred OUD treatment: Other specified
+  title: 'Preferred OUD treatment: Other specified'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Other specified
   constraints:
     maxLength: 80
@@ -5354,7 +5354,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: No treatment
+  title: 'Preferred OUD treatment: No treatment'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? No treatment
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
@@ -5368,7 +5368,7 @@ fields:
   falseValues:
   - Unchecked
   - 'No'
-  title: Preferred OUD treatment: Don''t know/No preference
+  title: 'Preferred OUD treatment: Don''t know/No preference'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Don''t know/No preference
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
