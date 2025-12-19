@@ -642,11 +642,11 @@ fields:
     - Did not complete high school
     - GED or equivalent
     - Regular high school diploma
-    - Some college credit but less than 1 year of college credit
-    - 1 or more years of college credit but no degree
+    - Some college credit, but less than 1 year of college credit
+    - 1 or more years of college credit, but no degree
     - Associate's degree (e.g., AA or AS)
-    - Bachelor's degree (e.g.,  BA or BS)
-    - Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)
+    - Bachelor's degree (e.g., BA or BS)
+    - Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD, etc.)
     - Other (specify)
   jcoin:section: Demographics
   jcoin:baseline: true
