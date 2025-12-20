@@ -763,7 +763,11 @@ fields:
   jcoin:originalName: D7d2
   jcoin:optional: true
 - name: household_nonemploy_any
-  type: string
+  type: boolean
+  trueValues:
+  - 'Yes'
+  falseValues:
+  - 'No'
   title: Other non-employmnet income sources
   description: '[During the past xx days (since last assessment), did your household
     receive any other non-employment income sources like retirement, pension, alimony,
