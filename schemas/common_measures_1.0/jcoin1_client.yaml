@@ -834,7 +834,7 @@ fields:
   jcoin:optional: true
 - name: current_work_school
   type: string
-  title: Current school or work situation description
+  title: Current school or work situation
   description: Which one of the following statements best describes your work or school
     situation currently? (CLARIFY AND CODE) [For D8, include work under the table
     but not any other illegal work or income]
@@ -845,7 +845,7 @@ fields:
     - Have a job where you are paid one day at a time (day labor)
     - Have a job, but not at work because of treatment, extended illness, maternity
       leave, furlough or strike
-    - Have a job, but not at work because it is seasonal work
+    - Have a job but not at work because it is seasonal work
     - Unemployed or laid off and looking for work
     - Unemployed or laid off and not looking for work
     - Full-time homemaker (keeping house)
@@ -853,10 +853,26 @@ fields:
     - In school or training, but not currently going to classes
     - Retired
     - In jail, prison or detention
-    - Too disabled for work
+    - Too disabled for work (Please describe disability)
     - In the military
     - Doing volunteer work
     - Some other work situation
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+- name: disabled_specify
+  type: string
+  title: 'Current school or work situation: Disability described'
+  description: Which one of the following statements best describes your work or school situation currently? Disability described
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  join:followup: true
+  jcoin:originalName: D8
+- name: oth_work_specify
+  type: string
+  title: 'Current school or work situation: Other situation described'
+  description: Which one of the following statements best describes your work or school situation currently? Other situation described
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
@@ -872,10 +888,20 @@ fields:
   jcoin:originalName: D8a
   jcoin:notes: If 0, skip to D9.
 - name: work_typical_days_week
-  type: integer
+  type: string
   title: Days per week worked
   description: During the past xx days (since last assessment), how many days per
     week do you typically work?
+  constraints:
+    enum:
+    - I don't typically work at all
+    - 1 day a week
+    - 2 days a week
+    - 3 days a week
+    - 4 days a week
+    - 5 days a week
+    - 6 days a week
+    - I typically work every day of the week
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
@@ -1302,17 +1328,18 @@ fields:
   jcoin:originalName: D11j
   jcoin:optional: true
 - name: narcan_received
-  type: boolean
-  trueValues:
-  - 'Yes'
-  falseValues:
-  - 'No'
+  type: string
   title: Received Narcan kit
   description: '[At your most recent release from [jail/prison], did you receive a
     Naloxone rescue kit (Narcan kit) to save yourself or someone else in the event
     of an opioid overdose? [Overdose definition = use enough of the drug to cause
     a life-threatening reaction that requires medical attention]] If respondent was
     in jail/prison during the past 3 months but not currently, ask:'
+  constraints:
+    enum:
+    - 'No'
+    - 'Yes'
+    - 'n/a not recently incarcerated'
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
