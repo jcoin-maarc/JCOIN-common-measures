@@ -1391,7 +1391,7 @@ fields:
     - With some difficulty
     - With much difficulty
     - Unable to do
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P1a
@@ -1407,7 +1407,7 @@ fields:
     - With some difficulty
     - With much difficulty
     - Unable to do
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P1b
@@ -1423,7 +1423,7 @@ fields:
     - With some difficulty
     - With much difficulty
     - Unable to do
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P1c
@@ -1439,7 +1439,7 @@ fields:
     - With some difficulty
     - With much difficulty
     - Unable to do
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P1d
@@ -1455,7 +1455,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P2a
@@ -1471,7 +1471,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P2b
@@ -1487,7 +1487,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P2c
@@ -1503,7 +1503,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P2d
@@ -1518,7 +1518,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P3a
@@ -1534,7 +1534,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P3b
@@ -1549,7 +1549,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P3c
@@ -1564,7 +1564,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P3d
@@ -1579,7 +1579,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P4a
@@ -1594,7 +1594,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P4b
@@ -1609,7 +1609,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P4c
@@ -1624,7 +1624,7 @@ fields:
     - Sometimes
     - Often
     - Always
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P4d
@@ -1639,7 +1639,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P5a
@@ -1655,7 +1655,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P5b
@@ -1670,7 +1670,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P5c
@@ -1685,7 +1685,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P5d
@@ -1700,7 +1700,7 @@ fields:
     - Fair
     - Good
     - Very good
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P6a
@@ -1715,7 +1715,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P6b
@@ -1730,7 +1730,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P6c
@@ -1745,7 +1745,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P6d
@@ -1760,7 +1760,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P7a
@@ -1776,7 +1776,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P7b
@@ -1792,7 +1792,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P8a
@@ -1808,7 +1808,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P8b
@@ -1824,7 +1824,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P8c
@@ -1840,7 +1840,7 @@ fields:
     - Somewhat
     - Quite a bit
     - Very much
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P8d
@@ -1852,7 +1852,7 @@ fields:
     worst pain imaginable.'
   constraints:
     maximum: 10
-  jcoin:section: PROMIS 29+2/ PROPr
+  jcoin:section: PROMIS 29+2/PROPr
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: P9
