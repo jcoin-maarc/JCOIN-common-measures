@@ -30,6 +30,7 @@ fields:
   title: Date enrolled
   description: Date of study enrollment (e.g., date of consent)
   jcoin:section: Administrative
+  jcoin:baseline: true
   jcoin:notes: Shifted for de-identification
 - name: quarter_enrolled
   type: string
@@ -39,6 +40,7 @@ fields:
     maxLength: 6
     pattern: 20[0-9][0-9]Q[1-4]
   jcoin:section: Administrative
+  jcoin:baseline: true
 - name: month_enrolled
   type: string
   title: Month enrolled
@@ -68,6 +70,7 @@ fields:
     maxLength: 2
     pattern: '[A-Z][A-Z]'
   jcoin:section: Administrative
+  jcoin:baseline: true
 - name: current_study_status
   type: string
   title: Current study status
@@ -94,6 +97,7 @@ fields:
   constraints:
     maxLength: 24
   jcoin:section: Administrative
+  jcoin:baseline: true
 - name: compliance
   type: integer
   title: Compliance with treatment or intervention
@@ -118,7 +122,7 @@ fields:
   type: integer
   title: Visit number
   description: Sequential number corresponding to each planned interview or
-    visit (e.g., 'Baseline' = 1, 'Three months' = 2, 'Six months' = 3, etc.
+    visit (e.g., 'Baseline' = 1, 'Three months' = 2, 'Six months' = 3, etc.)
   constraints:
     minimum: 1
   jcoin:section: Administrative
