@@ -139,7 +139,6 @@ fields:
   jcoin:followup: true
 - name: shifted_visit_dt
   type: date
-  format: '%Y%m%d'
   title: Visit date
   description: Date of visit/interview (shifted for de-identification)
   jcoin:section: Administrative
