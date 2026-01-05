@@ -5375,7 +5375,7 @@ fields:
   title: 'Preferred OUD treatment: Other specified'
   description: Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? Other specified
   constraints:
-    maxLength: 80
+    maxLength: 256
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
