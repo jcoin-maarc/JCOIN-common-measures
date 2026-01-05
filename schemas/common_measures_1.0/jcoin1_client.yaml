@@ -5417,7 +5417,7 @@ fields:
     - Methadone
     - Buprenorphine/Suboxone
     - Naltrexone/Vivitrol
-    - Don''t know/No preference
+    - Don't know/No preference
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
@@ -5432,7 +5432,7 @@ fields:
     - I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone)
     - I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi)
     - I would prefer to receive the 6-month buprenorphine implant
-    - Don''t know/No preference
+    - Don't know/No preference
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
@@ -5446,7 +5446,7 @@ fields:
     enum:
     - I would prefer to receive daily naltrexone oral (Revia)
     - I would prefer to receive monthly naltrexone injections (Vivitrol)
-    - Don''t know/No preference
+    - Don't know/No preference
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
