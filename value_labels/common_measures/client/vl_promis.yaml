@@ -1,0 +1,90 @@
+value_labels:
+  promis_difficulty:
+    1: Without any difficulty
+    2: With a little difficulty
+    3: With some difficulty
+    4: With much difficulty
+    5: Unable to do
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  promis_freq:
+    1: Never
+    2: Rarely
+    3: Sometimes
+    4: Often
+    5: Always
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  promis_howmuch:
+    1: Not at all
+    2: A little bit
+    3: Somewhat
+    4: Quite a bit
+    5: Very much
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  sleep_quality:
+    1: Very poor
+    2: Poor
+    3: Fair
+    4: Good
+    5: Very good
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  pain_intensity:
+    0: No pain
+    10: Worst pain imaginable
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  difficulty_chores: promis_difficulty
+  difficulty_stairs: promis_difficulty
+  difficulty_walking: promis_difficulty
+  difficulty_traveling: promis_difficulty
+  trouble_with_leisure: promis_freq
+  trouble_with_family: promis_freq
+  trouble_with_work: promis_freq
+  trouble_with_activities: promis_freq
+  past_week_fearful: promis_freq
+  past_week_anxiety: promis_freq
+  past_week_worried: promis_freq
+  past_week_uneasy: promis_freq
+  past_week_worthless: promis_freq
+  past_week_helpless: promis_freq
+  past_week_depressed: promis_freq
+  past_week_hopeless: promis_freq
+  past_week_fatigued: promis_howmuch
+  past_week_tired: promis_howmuch
+  past_week_rundown: promis_howmuch
+  fatigue_level: promis_howmuch
+  sleep_quality: sleep_quality
+  sleep_refreshing: promis_howmuch
+  sleep_problems: promis_howmuch
+  sleep_difficulty: promis_howmuch
+  can_concentrate: promis_howmuch
+  can_remember: promis_howmuch
+  pain_daily_activity: promis_howmuch
+  pain_work_around_house: promis_howmuch
+  pain_social_activity: promis_howmuch
+  pain_household_chores: promis_howmuch
+  pain_intensity: pain_intensity
