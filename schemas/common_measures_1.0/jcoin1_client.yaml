@@ -1867,7 +1867,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1a
@@ -1885,7 +1885,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1b
@@ -1902,7 +1902,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1c
@@ -1919,7 +1919,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1d
@@ -1936,7 +1936,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1g
@@ -1953,7 +1953,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1h
@@ -1971,7 +1971,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1j
@@ -1988,7 +1988,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1k
@@ -2005,7 +2005,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1m
@@ -2022,7 +2022,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R1n
@@ -2039,7 +2039,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R2a
@@ -2056,7 +2056,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R2b
@@ -2070,7 +2070,7 @@ fields:
   title: HIV/AIDS
   description: '[Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by
     a doctor or nurse that you had...'
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3a
@@ -2087,7 +2087,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3a
@@ -2099,7 +2099,7 @@ fields:
   - 'No'
   title: Hepatitis C
   description: '[Hepatitis C? ] Were you ever told by a doctor or nurse that you had...'
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3b
@@ -2115,7 +2115,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3b
@@ -2127,7 +2127,7 @@ fields:
   - 'No'
   title: Hepatitis B
   description: '[Hepatitis B? ] Were you ever told by a doctor or nurse that you had...'
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3c
@@ -2143,7 +2143,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3c
@@ -2156,7 +2156,7 @@ fields:
   title: Other sexually transmitted diseases
   description: '[Other sexually transmitted diseases or infections, such as syphilis.]
     Were you ever told by a doctor or nurse that you had...'
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3d
@@ -2173,7 +2173,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3d
@@ -2186,7 +2186,7 @@ fields:
   title: Tuberculosis
   description: '[Tuberculosis or TB?] Were you ever told by a doctor or nurse that
     you had...'
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3e
@@ -2202,7 +2202,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3e
@@ -2215,7 +2215,7 @@ fields:
   title: COVID
   description: '[Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse
     that you had...'
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3f
@@ -2231,7 +2231,7 @@ fields:
     - 4 to 12 months ago
     - 2 to 3 months ago
     - Past month
-  jcoin:section: Risk of Harms and Consequences
+  jcoin:section: Risk of Harm and Consequences
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3f
