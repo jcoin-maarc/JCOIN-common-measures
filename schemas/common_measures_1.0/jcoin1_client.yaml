@@ -106,6 +106,7 @@ fields:
 - name: compliance_unit
   type: string
   title: Units in which treatment compliance is recorded
+  description: Compliance (unit)
   constraints:
     enum:
     - Doses
