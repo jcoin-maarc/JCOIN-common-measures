@@ -5282,6 +5282,7 @@ fields:
   - Unchecked
   - 'No'
   title: Not a candidate for OUD treatment
+  description: Not a candidate for OUD treatment
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
