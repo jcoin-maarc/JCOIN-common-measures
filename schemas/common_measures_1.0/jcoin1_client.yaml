@@ -25,6 +25,12 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: XPID
+- name: hub
+  title: JCOIN Hub (de-identified)
+  Description: Anonymized  identifier, unique for each hubs
+  jcoin:section: Record and Linkage
+  jcoin:baseline: true
+  jcoin:followup: true
 - name: date_enrolled
   type: date
   title: Date enrolled
