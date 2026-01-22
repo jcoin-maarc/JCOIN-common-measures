@@ -46,8 +46,7 @@ value_labels:
     1: Working full-time, 35 hours or more a week
     2: Working part-time, less than 35 hours a week
     3: Have a job where you are paid one day at a time (day labor)
-    4: Have a job, but not at work because of treatment, extended illness, maternity
-      leave, furlough or strike
+    4: Have a job, but not at work because of treatment, extended illness, maternity leave, furlough or strike
     5: Have a job but not at work because it is seasonal work
     6: Unemployed or laid off and looking for work
     7: Unemployed or laid off and not looking for work
