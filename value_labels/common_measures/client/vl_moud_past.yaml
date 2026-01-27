@@ -1,0 +1,45 @@
+value_labels:
+  moud_past_num:
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  moud_past_yn:
+    0: No
+    1: Yes
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  intv_while_incarc: moud_past_yn
+  days_incarcerated_interval: moud_past_num
+  ever_rx_moud: moud_past_yn
+  months_daily_bup: moud_past_num
+  days_pti_daily_bup: moud_past_num
+  days_daily_bup: moud_past_num
+  months_sublocade: moud_past_num
+  days_pti_sublocade: moud_past_num
+  days_sublocade: moud_past_num
+  months_weekly_brixadi: moud_past_num
+  days_pti_weekly_brixadi: moud_past_num
+  days_weekly_brixadi: moud_past_num
+  months_monthly_brixadi: moud_past_num
+  days_pti_monthly_brixadi: moud_past_num
+  days_monthly_brixadi: moud_past_num
+  months_probuphine_implant: moud_past_num
+  days_pti_probuphine_implant: moud_past_num
+  days_probuphine_implant: moud_past_num
+  months_daily_ntx: moud_past_num
+  days_pti_daily_ntx: moud_past_num
+  days_daily_ntx: moud_past_num
+  months_monthly_vivitrol: moud_past_num
+  days_pti_monthly_vivitrol: moud_past_num
+  days_monthly_vivitrol: moud_past_num
+  months_methadone: moud_past_num
+  days_pti_methadone: moud_past_num
+  days_methadone: moud_past_num
