@@ -25,6 +25,12 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: XPID
+- name: hub
+  title: JCOIN Hub (de-identified)
+  Description: Anonymized  identifier, unique for each hubs
+  jcoin:section: Record and Linkage
+  jcoin:baseline: true
+  jcoin:followup: true
 - name: date_enrolled
   type: date
   title: Date enrolled
@@ -106,6 +112,7 @@ fields:
 - name: compliance_unit
   type: string
   title: Units in which treatment compliance is recorded
+  description: Compliance (unit)
   constraints:
     enum:
     - Doses
@@ -5281,6 +5288,7 @@ fields:
   - Unchecked
   - 'No'
   title: Not a candidate for OUD treatment
+  description: Not a candidate for OUD treatment
   jcoin:section: Treatment Preferences
   jcoin:baseline: true
   jcoin:followup: true
