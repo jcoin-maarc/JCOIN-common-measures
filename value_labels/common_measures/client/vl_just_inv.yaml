@@ -1,0 +1,79 @@
+value_labels:
+  just_num:
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  just_yn:
+    0: No
+    1: Yes
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  days_illegal_activity: just_num
+  times_drug_possession: just_num
+  times_public_drunk: just_num
+  times_dui: just_num
+  times_drug_dealing: just_num
+  times_vandalism: just_num
+  times_stolen_goods: just_num
+  times_forgery: just_num
+  times_shoplift: just_num
+  times_theft: just_num
+  times_burglary: just_num
+  times_auto_theft: just_num
+  times_carjacking: just_num
+  times_assault: just_num
+  times_robbery: just_num
+  times_aggravated_assault: just_num
+  times_rape: just_num
+  times_homicide: just_num
+  times_arson: just_num
+  times_prostitution: just_num
+  times_other_unlawful: just_num
+  number_charged_arrests: just_num
+  number_arrest_possession: just_num
+  number_arrest_drunk: just_num
+  number_arrest_dui: just_num
+  number_arrest_drug_dealing: just_num
+  number_arrest_vandalism: just_num
+  number_arrest_stolen_goods: just_num
+  number_arrest_forgery: just_num
+  number_arrest_shoplifting: just_num
+  numer_arrest_theft: just_num
+  number_arrest_burglary: just_num
+  number_arrest_auto_theft: just_num
+  number_arrest_carjacking: just_num
+  number_arrest_assault: just_num
+  number_arrest_robbery: just_num
+  number_arrest_aggravated: just_num
+  number_arrest_rape: just_num
+  number_arrest_homicide: just_num
+  number_arrest_arson: just_num
+  number_arrest_prostitution: just_num
+  number_arrest_other: just_num
+  days_electronic_monitoring: just_num
+  days_house_arrest: just_num
+  days_jail: just_num
+  days_prison: just_num
+  currently_incarcerated: just_yn
+  length_current_incarceration: just_num
+  days_parole: just_num
+  days_probation: just_num
+  days_other_supervision: just_num
+  days_met_probation_officer: just_num
+  days_trouble_probation_officer: just_num
+  number_lifetime_arrests: just_num
+  aged_first_arrest: just_num
+  years_lifetime_incarceration: just_num
+  months_lifetime_incarceration: just_num
+  times_guilty_sentenced: just_num
+  age_first_convicted: just_num
+
+

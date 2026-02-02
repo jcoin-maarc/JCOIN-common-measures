@@ -1,0 +1,48 @@
+value_labels:
+  risks_yn:
+    0: No
+    1: Yes
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  risks_last_time:
+    0: Never
+    1: More than a year ago
+    2: 4 to 12 months ago
+    3: 2 to 3 months ago
+    4: Past month
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  last_time_multiple_partners: risks_last_time
+  last_time_unprotected_sex: risks_last_time
+  last_time_sex_intoxicated: risks_last_time
+  last_time_injection_drug: risks_last_time
+  last_time_attacked_weapon: risks_last_time
+  last_time_physical_abuse: risks_last_time
+  last_time_sex_abuse: risks_last_time
+  last_time_emotional_abuse: risks_last_time
+  last_time_ongoing_abuse: risks_last_time
+  last_time_afraid_abuse: risks_last_time
+  last_time_distressed_past: risks_last_time
+  last_time_suicidal: risks_last_time
+  ever_dx_hiv: risks_yn
+  first_dx_hiv: risks_last_time
+  ever_dx_hcv: risks_yn
+  first_dx_hcv: risks_last_time
+  ever_dx_hepb: risks_yn
+  first_dx_hepb: risks_last_time
+  ever_dx_std: risks_yn
+  first_dx_std: risks_last_time
+  ever_dx_tb: risks_yn
+  first_dx_tb: risks_last_time
+  ever_dx_covid: risks_yn
+  first_dx_covid: risks_last_time
+
