@@ -36,7 +36,7 @@ fields:
   type: date
   title: Date enrolled
   description: Date of study enrollment (e.g., date of consent)
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:notes: Shifted for de-identification
 - name: quarter_enrolled
@@ -46,7 +46,7 @@ fields:
   constraints:
     maxLength: 6
     pattern: 20[0-9][0-9]Q[1-4]
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
 - name: month_enrolled
   type: string
@@ -66,7 +66,7 @@ fields:
     - October
     - November
     - December
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:notes: For use in preparing DSMB reports only.
 - name: state_of_site_enrollment
   type: string
@@ -76,7 +76,7 @@ fields:
   constraints:
     maxLength: 2
     pattern: '[A-Z][A-Z]'
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
 - name: current_study_status
   type: string
@@ -90,26 +90,26 @@ fields:
     - Re-incarcerated
     - Deceased
     - Completed study
-  jcoin:section: Administrative
+  jcoin:section: Study Information
 - name: days_on_study
   type: integer
   title: Days on study
   description: Number of days participant spent on study following enrollment (for
     those still on study, number of days from enrollment to current date).
-  jcoin:section: Administrative
+  jcoin:section: Study Information
 - name: tx_arm
   type: string
   title: Treatment arm
   description: Treatment arm to which participant was randomized (hub specific)
   constraints:
     maxLength: 24
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
 - name: compliance
   type: integer
   title: Compliance with treatment or intervention
   description: Quantity of treatment received.
-  jcoin:section: Administrative
+  jcoin:section: Study Information
 - name: compliance_unit
   type: string
   title: Compliance unit
@@ -120,12 +120,12 @@ fields:
     - Sessions/meetings
     - Days
     - Weeks
-  jcoin:section: Administrative
+  jcoin:section: Study Information
 - name: compliance_max
   type: integer
   title: Maximum compliance value
   description: Maximum possible value of compliance according to study protocol.
-  jcoin:section: Administrative
+  jcoin:section: Study Information
 - name: visit_number
   type: integer
   title: Visit number
@@ -133,7 +133,7 @@ fields:
     visit (e.g., 'Baseline' = 1, 'Three months' = 2, 'Six months' = 3, etc.)
   constraints:
     minimum: 1
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
 - name: visit_month
@@ -142,14 +142,14 @@ fields:
   description: Intended visit timepoint (e.g., 'Baseline', '3 month', '6 month', etc.)
   constraints:
     pattern: ^Baseline$|^\d+ month$
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
 - name: shifted_visit_dt
   type: date
   title: Visit date
   description: Date of visit/interview (shifted for de-identification)
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:notes: Shifted for de-identification
@@ -163,7 +163,7 @@ fields:
     - Orally administered by staff
     - Orally administered by others
     - Other (please describe)
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM1
@@ -174,7 +174,7 @@ fields:
   description: How were the questions administered? Other described
   constraints:
     maxLength: 80
-  jcoin:section: Administration
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM1
@@ -189,7 +189,7 @@ fields:
     - Pen & paper
     - On a computer or tablet
     - Other (please describe)
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM2
@@ -200,7 +200,7 @@ fields:
   description: What was the mode of administration? Other described
   constraints:
     maxLength: 80
-  jcoin:section: Administration
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM2
@@ -215,7 +215,7 @@ fields:
     - English
     - Spanish
     - Other (please describe)
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM3
@@ -226,7 +226,7 @@ fields:
   description: What was the primary language in which it was conducted? Other described
   constraints:
     maxLength: 80
-  jcoin:section: Administration
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM3
@@ -242,7 +242,7 @@ fields:
   - 'No'
   title: Noise during interview
   description: What problems prevented a quiet and private environment? Noise or other frequent distractions
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -257,7 +257,7 @@ fields:
   - 'No'
   title: Interruptions during interview
   description: What problems prevented a quiet and private environment? Frequent interruptions
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -272,7 +272,7 @@ fields:
   - 'No'
   title: Other people present during interview
   description: What problems prevented a quiet and private environment? Other people within ear shot
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -287,7 +287,7 @@ fields:
   - 'No'
   title: Police or guards present during interview
   description: What problems prevented a quiet and private environment? Police, guards, probation/parole officers, social workers or other officials present
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -302,7 +302,7 @@ fields:
   - 'No'
   title: Possible electronic monitoring of interview
   description: What problems prevented a quiet and private environment? Possible speaker or telephone monitoring of interview
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -317,7 +317,7 @@ fields:
   - 'No'
   title: Other problems during interview
   description: What problems prevented a quiet and private environment? Other (please describe)
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -328,7 +328,7 @@ fields:
   description: What problems prevented a quiet and private environment? Other described
   constraints:
     maxLength: 80
-  jcoin:section: Administration
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -337,7 +337,7 @@ fields:
 - name: interview_duration
   title: Interview duration (in minutes)
   description: What was the interview duration (time on task) in minutes?
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM10
@@ -345,7 +345,7 @@ fields:
 - name: interview_days
   title: Interview days
   description: Over how many different days was the interview conducted?
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM11
@@ -353,7 +353,7 @@ fields:
 - name: interview_comments
   title: Comments regarding assessment
   description: Do you have any additional comments about the administration of the assessment that should be considered when interpreting this assessment?
-  jcoin:section: Administrative
+  jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM99
