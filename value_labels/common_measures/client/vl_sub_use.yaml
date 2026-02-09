@@ -1,0 +1,79 @@
+value_labels:
+  sub_num:
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  sub_yn:
+    0: No
+    1: Yes
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  sub_last_time:
+    0: Never
+    1: More than a year ago
+    2: 4 to 12 months ago
+    3: 2 to 3 months ago
+    4: Past month
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  last_drug_use: sub_last_time
+  last_getting_using_drugs: sub_last_time
+  last_social_problems: sub_last_time
+  last_work_life_disruption: sub_last_time
+  last_withdrawal: sub_last_time
+  last_used_opioids: sub_last_time
+  last_opioid_overdose: sub_last_time
+  last_went_moud: sub_last_time
+  times_opioid_overdose: sub_num
+  times_naloxone: sub_num
+  who_gave_naloxone_paramed: sub_yn
+  who_gave_naloxone_firefighter: sub_yn
+  who_gave_naloxone_police: sub_yn
+  who_gave_naloxone_er: sub_yn
+  who_gave_naloxone_spouse: sub_yn
+  who_gave_naloxone_partner: sub_yn
+  who_gave_naloxone_parent: sub_yn
+  who_gave_naloxone_friend: sub_yn
+  who_gave_naloxone_stranger: sub_yn
+  who_gave_naloxone_self: sub_yn
+  who_gave_naloxone_other: sub_yn
+  drugs_before_od_heroin: sub_yn
+  drugs_before_od_fentanyl: sub_yn
+  drugs_before_od_opioids: sub_yn
+  drugs_before_od_crack: sub_yn
+  drugs_before_od_meth: sub_yn
+  drugs_before_od_xanax: sub_yn
+  drugs_before_od_marijuana: sub_yn
+  drugs_before_od_alcohol: sub_yn
+  drugs_before_od_other: sub_yn
+  times_ems_after_overdose: sub_num
+  times_er_after_overdose: sub_num
+  times_hospital_after_overdose: sub_num
+  tx_refer_after_overdose: sub_num
+  days_drug_use: sub_num
+  days_alcohol_use: sub_num
+  days_alcohol_binge: sub_num
+  days_medical_marijuana: sub_num
+  days_other_marijuana: sub_num
+  days_heroin: sub_num
+  days_fentanyl: sub_num
+  days_non_rx_methadone: sub_num
+  days_non_rx_suboxone: sub_num
+  days_other_opioids: sub_num
+  days_cocaine: sub_num
+  days_amphetamines: sub_num
+  days_benzo: sub_num
+  days_other_drugs: sub_num
+  days_confined_no_use: sub_num

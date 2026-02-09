@@ -1,0 +1,62 @@
+value_labels:
+  util_num:
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  util_yn:
+    0: No
+    1: Yes
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  util_agreement:
+    1: Strongly agree
+    2: Somewhat agree
+    3: Neutral
+    4: Somewhat disagree
+    5: Strongly disagree
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  times_er_visits: util_num
+  nights_hospital_detox: util_num
+  nights_hospitalized: util_num
+  nights_residential_detox: util_num
+  nights_residential_sud_tx: util_num
+  nights_residential_mh: util_num
+  nights_physical_rehab: util_num
+  visits_primary_care: util_num
+  pc_reason_alc_drugs: util_yn
+  pc_reason_mh: util_yn
+  pc_reason_physical: util_yn
+  pc_reason_other: util_yn
+  op_tx_days: util_num
+  op_tx_days_visited: util_num
+  op_tx_days_online: util_num
+  op_tx_days_doctor: util_num
+  op_tx_days_therapy: util_num
+  op_tx_days_moud_only: util_num
+  psych_visits: util_num
+  psych_visits_in_person: util_num
+  psych_visits_online: util_num
+  counselor_visits: util_num
+  counselor_visits_in_person: util_num
+  counselor_visits_online: util_num
+  healthcare_expense: util_num
+  received_sud_tx: util_yn
+  sud_tx_organized: util_agreement
+  sud_tx_satisfied: util_agreement
+  sud_tx_efficient: util_agreement
+  sud_tx_personal: util_agreement
+  sud_tx_moud: util_agreement
+

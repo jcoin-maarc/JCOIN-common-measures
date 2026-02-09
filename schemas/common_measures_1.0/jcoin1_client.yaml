@@ -25,6 +25,13 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: XPID
+- name: hub
+  type: string
+  title: JCOIN hub identifier
+  jcoin:section: Record and Linkage
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: XHub
 - name: date_enrolled
   type: date
   title: Date enrolled
@@ -105,7 +112,8 @@ fields:
   jcoin:section: Administrative
 - name: compliance_unit
   type: string
-  title: Units in which treatment compliance is recorded
+  title: Compliance unit
+  description: Units in which treatment compliance is recorded
   constraints:
     enum:
     - Doses

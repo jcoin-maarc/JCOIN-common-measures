@@ -1,0 +1,55 @@
+value_labels:
+  txpref_yn:
+    0: No
+    1: Yes
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  txpref_moud_type:
+    1: Methadone
+    2: Buprenorphine/Suboxone (ASK M4)
+    3: Naltrexone/Vivitrol (ASK M5)
+    4: Don’t Know / No Preference
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  txpref_bup_type:
+    1: I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone)
+    2: I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi)
+    3: I would prefer to receive the 6-month buprenorphine implant
+    4: Don't know/No preference
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+  txpref_nalox_type:
+    1: I would prefer to receive daily naltrexone oral (Revia)
+    2: I would prefer to receive monthly naltrexone injections (Vivitrol)
+    3: Don't know/No preference
+    .a: Don't know
+    .b: Refused
+    .c: Left blank
+    .d: Legitimately skipped
+    .e: Not collected
+    .f: Missing in error
+field_to_value_label:
+  oud_tx_not_appropriate: txpref_yn
+  prefer_oud_meds: txpref_yn
+  prefer_oud_detox: txpref_yn
+  prefer_oud_op: txpref_yn
+  prefer_oud_iop: txpref_yn
+  prefer_oud_residential: txpref_yn
+  prefer_oud_other_tx: txpref_yn
+  prefer_oud_no_treatment: txpref_yn
+  prefer_oud_dk: txpref_yn
+  prefer_moud_type: txpref_moud_type
+  prefer_which_bup: txpref_bup_type
+  prefer_which_naloxone: txpref_nalox_type
