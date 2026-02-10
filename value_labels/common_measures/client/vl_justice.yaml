@@ -7,8 +7,8 @@ value_labels:
     .e: Not collected
     .f: Missing in error
   just_yn:
-    0: No
-    1: Yes
+    0: 'No'
+    1: 'Yes'
     .a: Don't know
     .b: Refused
     .c: Left blank
@@ -62,7 +62,7 @@ field_to_value_label:
   days_house_arrest: just_num
   days_jail: just_num
   days_prison: just_num
-  currently_incarcerated: just_yn
+  # currently_incarcerated: just_yn
   length_current_incarceration: just_num
   days_parole: just_num
   days_probation: just_num
@@ -75,5 +75,3 @@ field_to_value_label:
   months_lifetime_incarceration: just_num
   times_guilty_sentenced: just_num
   age_first_convicted: just_num
-
-

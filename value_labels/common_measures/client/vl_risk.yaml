@@ -1,7 +1,7 @@
 value_labels:
   risks_yn:
-    0: No
-    1: Yes
+    0: 'No'
+    1: 'Yes'
     .a: Don't know
     .b: Refused
     .c: Left blank
@@ -33,16 +33,15 @@ field_to_value_label:
   last_time_afraid_abuse: risks_last_time
   last_time_distressed_past: risks_last_time
   last_time_suicidal: risks_last_time
-  ever_dx_hiv: risks_yn
+  # ever_dx_hiv: risks_yn
   first_dx_hiv: risks_last_time
-  ever_dx_hcv: risks_yn
+  # ever_dx_hcv: risks_yn
   first_dx_hcv: risks_last_time
-  ever_dx_hepb: risks_yn
+  # ever_dx_hepb: risks_yn
   first_dx_hepb: risks_last_time
-  ever_dx_std: risks_yn
+  # ever_dx_std: risks_yn
   first_dx_std: risks_last_time
-  ever_dx_tb: risks_yn
+  # ever_dx_tb: risks_yn
   first_dx_tb: risks_last_time
-  ever_dx_covid: risks_yn
+  # ever_dx_covid: risks_yn
   first_dx_covid: risks_last_time
-

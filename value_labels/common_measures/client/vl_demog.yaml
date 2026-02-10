@@ -1,7 +1,7 @@
 value_labels:
   demo_yn:
-    0: No
-    1: Yes
+    0: 'No'
+    1: 'Yes'
     .a: Don't know
     .b: Refused
     .c: Left blank
@@ -9,8 +9,8 @@ value_labels:
     .e: Not collected
     .f: Missing in error
   demo_yn_na:
-    0: No
-    1: Yes
+    0: 'No'
+    1: 'Yes'
     9: n/a not recently incarcerated
     .a: Don't know
     .b: Refused
@@ -78,14 +78,14 @@ value_labels:
     .e: Not collected
     .f: Missing in error
   demo_educ:
-    1: Did not complete high school.
+    1: Did not complete high school
     2: GED or equivalent
     3: Regular high school diploma
     4: Some college credit, but less than 1 year of college credit
     5: 1 or more years of college credit, but no degree
-    6: Associate’s Degree (e.g., AA or AS)
-    7: Bachelor’s Degree (e.g., BA or BS)
-    8: Graduate degree (MSW, MA, MS, JD, MD, DSW, EdD, Ph.D, etc.)
+    6: Associate's degree (e.g., AA or AS)
+    7: Bachelor's degree (e.g., BA or BS)
+    8: Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD, etc.)
     99: Other (specify)
     .a: Don't know
     .b: Refused
@@ -194,67 +194,67 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
-  field_to_value_label:
-    age: demo_num
-    hispanic_latino: demo_yn
-    race_white: demo_yn
-    race_black: demo_yn
-    race_AIAN: demo_yn
-    race_asian: demo_yn
-    race_hawaiian_OPI: demo_yn
-    race_other: demo_yn
-    sex_at_birth: demo_sex
-    gender_id: demo_gender
-    sex_at_birth2: demo_sex2
-    gender_id_condensed: demo_gender_condensed
-    sex_orient_category: demo_sex_orient
-    ever_pregnant: demo_ever_pregnant
-    marital_status: demo_marital_status
-    living_as_married: demo_living_as_married
-    educ_category: demo_educ
-    educ_highest_grade: demo_highest_grade
-    household_people: demo_num
-    household_under_18: demo_num
-    household_income: demo_num
-    household_income_legal: demo_income
-    household_public_assist_any: demo_yn
-    household_public_assist_dollars: demo_num
-    household_nonemploy_any: demo_yn
-    household_nonemploy_dollars: demo_num
-    household_income_illegal_any: demo_yn
-    household_income_illegal_dollars: demo_num
-    current_work_school: demo_work_school
-    work_days: demo_num
-    work_typical_days_week: demo_days_per_week
-    work_hours_week: demo_num
-    work_hourly_wage: demo_num
-    work_health_insurance: demo_yn
-    work_paid_time_off: demo_yn
-    work_pension: demo_yn
-    work_retirement_plan: demo_yn
-    have_health_insurance: demo_yn
-    insured_private: demo_yn
-    insured_medicare: demo_yn
-    insured_medigap: demo_yn
-    insured_medicaid: demo_yn
-    insured_chip: demo_yn
-    insured_military: demo_yn
-    insured_indian: demo_yn
-    insured_state: demo_yn
-    insured_other_gov: demo_yn
-    insured_single_service: demo_yn
-    insured_dont_know: demo_yn
-    days_uninsured: demo_num
-    days_self_help: demo_num
-    days_drugfree_activity: demo_num
-    days_homeless: demo_num
-    days_shelter: demo_num
-    days_household_alcohol: demo_num
-    days_household_drug: demo_num
-    days_activities_substance_use: demo_num
-    days_family_trouble: demo_num
-    days_arguments: demo_num
-    days_abused: demo_num
-    narcan_received: demo_yn_na
-    narcan_used: demo_yn
-    narcan_refilled: demo_yn
+field_to_value_label:
+  age: demo_num
+  hispanic_latino: demo_yn
+  race_white: demo_yn
+  race_black: demo_yn
+  race_AIAN: demo_yn
+  race_asian: demo_yn
+  race_hawaiian_OPI: demo_yn
+  race_other: demo_yn
+  sex_at_birth: demo_sex
+  gender_id: demo_gender
+  sex_at_birth2: demo_sex2
+  gender_id_condensed: demo_gender_condensed
+  sex_orient_category: demo_sex_orient
+  ever_pregnant: demo_ever_pregnant
+  marital_status: demo_marital_status
+  living_as_married: demo_living_as_married
+  educ_category: demo_educ
+  educ_highest_grade: demo_highest_grade
+  household_people: demo_num
+  household_under_18: demo_num
+  household_income: demo_num
+  household_income_legal: demo_income
+  household_public_assist_any: demo_yn
+  household_public_assist_dollars: demo_num
+  household_nonemploy_any: demo_yn
+  household_nonemploy_dollars: demo_num
+  household_income_illegal_any: demo_yn
+  household_income_illegal_dollars: demo_num
+  current_work_school: demo_work_school
+  work_days: demo_num
+  work_typical_days_week: demo_days_per_week
+  work_hours_week: demo_num
+  work_hourly_wage: demo_num
+  work_health_insurance: demo_yn
+  work_paid_time_off: demo_yn
+  work_pension: demo_yn
+  work_retirement_plan: demo_yn
+  have_health_insurance: demo_yn
+  insured_private: demo_yn
+  insured_medicare: demo_yn
+  insured_medigap: demo_yn
+  insured_medicaid: demo_yn
+  insured_chip: demo_yn
+  insured_military: demo_yn
+  insured_indian: demo_yn
+  insured_state: demo_yn
+  insured_other_gov: demo_yn
+  insured_single_service: demo_yn
+  insured_dont_know: demo_yn
+  days_uninsured: demo_num
+  days_self_help: demo_num
+  days_drugfree_activity: demo_num
+  days_homeless: demo_num
+  days_shelter: demo_num
+  days_household_alcohol: demo_num
+  days_household_drug: demo_num
+  days_activities_substance_use: demo_num
+  days_family_trouble: demo_num
+  days_arguments: demo_num
+  days_abused: demo_num
+  narcan_received: demo_yn_na
+  narcan_used: demo_yn
+  narcan_refilled: demo_yn

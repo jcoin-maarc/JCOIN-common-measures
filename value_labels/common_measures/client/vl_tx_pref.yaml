@@ -1,7 +1,7 @@
 value_labels:
   txpref_yn:
-    0: No
-    1: Yes
+    0: 'No'
+    1: 'Yes'
     .a: Don't know
     .b: Refused
     .c: Left blank
@@ -10,9 +10,9 @@ value_labels:
     .f: Missing in error
   txpref_moud_type:
     1: Methadone
-    2: Buprenorphine/Suboxone (ASK M4)
-    3: Naltrexone/Vivitrol (ASK M5)
-    4: Don’t Know / No Preference
+    2: Buprenorphine/Suboxone
+    3: Naltrexone/Vivitrol
+    4: Don't know/No preference
     .a: Don't know
     .b: Refused
     .c: Left blank
@@ -41,15 +41,15 @@ value_labels:
     .e: Not collected
     .f: Missing in error
 field_to_value_label:
-  oud_tx_not_appropriate: txpref_yn
-  prefer_oud_meds: txpref_yn
-  prefer_oud_detox: txpref_yn
-  prefer_oud_op: txpref_yn
-  prefer_oud_iop: txpref_yn
-  prefer_oud_residential: txpref_yn
-  prefer_oud_other_tx: txpref_yn
-  prefer_oud_no_treatment: txpref_yn
-  prefer_oud_dk: txpref_yn
+  # oud_tx_not_appropriate: txpref_yn
+  # prefer_oud_meds: txpref_yn
+  # prefer_oud_detox: txpref_yn
+  # prefer_oud_op: txpref_yn
+  # prefer_oud_iop: txpref_yn
+  # prefer_oud_residential: txpref_yn
+  # prefer_oud_other_tx: txpref_yn
+  # prefer_oud_no_treatment: txpref_yn
+  # prefer_oud_dk: txpref_yn
   prefer_moud_type: txpref_moud_type
   prefer_which_bup: txpref_bup_type
   prefer_which_naloxone: txpref_nalox_type

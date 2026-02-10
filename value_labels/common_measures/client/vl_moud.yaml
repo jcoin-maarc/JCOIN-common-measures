@@ -7,8 +7,8 @@ value_labels:
     .e: Not collected
     .f: Missing in error
   moud_past_yn:
-    0: No
-    1: Yes
+    0: 'No'
+    1: 'Yes'
     .a: Don't know
     .b: Refused
     .c: Left blank
@@ -16,7 +16,7 @@ value_labels:
     .e: Not collected
     .f: Missing in error
 field_to_value_label:
-  intv_while_incarc: moud_past_yn
+  # intv_while_incarc: moud_past_yn
   days_incarcerated_interval: moud_past_num
   ever_rx_moud: moud_past_yn
   months_daily_bup: moud_past_num
