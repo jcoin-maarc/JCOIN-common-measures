@@ -8,6 +8,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   txpref_moud_type:
     1: Methadone
     2: Buprenorphine/Suboxone
@@ -19,6 +20,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   txpref_bup_type:
     1: I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone)
     2: I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi)
@@ -30,6 +32,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   txpref_nalox_type:
     1: I would prefer to receive daily naltrexone oral (Revia)
     2: I would prefer to receive monthly naltrexone injections (Vivitrol)
@@ -40,6 +43,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   # oud_tx_not_appropriate: txpref_yn
   # prefer_oud_meds: txpref_yn

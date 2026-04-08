@@ -11,6 +11,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   promis_freq:
     1: Never
     2: Rarely
@@ -23,6 +24,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   promis_howmuch:
     1: Not at all
     2: A little bit
@@ -35,6 +37,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   sleep_quality:
     1: Very poor
     2: Poor
@@ -47,6 +50,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   pain_intensity:
     0: No pain
     10: Worst pain imaginable
@@ -56,6 +60,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   difficulty_chores: promis_difficulty
   difficulty_stairs: promis_difficulty

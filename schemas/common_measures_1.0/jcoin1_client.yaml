@@ -10,6 +10,7 @@ missingValues:
 - Legitimately skipped
 - Not collected
 - Missing in error
+- Confidential
 fieldsMatch: superset
 jcoin:schemaType: Client
 fields:

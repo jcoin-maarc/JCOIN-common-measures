@@ -8,6 +8,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   risks_last_time:
     0: Never
     1: More than a year ago
@@ -20,6 +21,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   last_time_multiple_partners: risks_last_time
   last_time_unprotected_sex: risks_last_time

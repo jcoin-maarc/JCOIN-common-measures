@@ -8,6 +8,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_yn_na:
     0: 'No'
     1: 'Yes'
@@ -18,6 +19,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_num:
     .a: Don't know
     .b: Refused
@@ -25,6 +27,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_days_per_week:
     0: I don't typically work at all
     1: 1 day a week
@@ -40,6 +43,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_work_school:
     1: Working full-time, 35 hours or more a week
     2: Working part-time, less than 35 hours a week
@@ -63,6 +67,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_income:
     1: Less than $12,500
     2: $12,500 - $20,000
@@ -77,6 +82,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_educ:
     1: Did not complete high school
     2: GED or equivalent
@@ -93,6 +99,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_highest_grade:
     0: No education
     11: Completed 11th grade
@@ -102,6 +109,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_living_as_married:
     1: Yes, I am living as married with partner
     2: No, I am not living as married with partner
@@ -111,6 +119,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_marital_status:
     1: Married
     2: Widowed
@@ -123,6 +132,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_ever_pregnant:
     1: Never been pregnant
     2: Currently pregnant
@@ -135,6 +145,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_sex_orient:
     1: Straight or heterosexual
     2: Lesbian or gay
@@ -147,6 +158,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_gender_condensed:
     1: Male
     2: Female
@@ -159,6 +171,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_sex2:
     1: Male
     2: Female
@@ -169,6 +182,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_gender:
     1: Male
     2: Female
@@ -183,6 +197,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   demo_sex:
     1: Male
     2: Female
@@ -194,6 +209,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   age: demo_num
   hispanic_latino: demo_yn

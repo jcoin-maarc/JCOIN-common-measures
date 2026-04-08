@@ -6,6 +6,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   sub_yn:
     0: 'No'
     1: 'Yes'
@@ -15,6 +16,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   sub_last_time:
     0: Never
     1: More than a year ago
@@ -27,6 +29,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   last_drug_use: sub_last_time
   last_getting_using_drugs: sub_last_time

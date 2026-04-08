@@ -6,6 +6,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   just_yn:
     0: 'No'
     1: 'Yes'
@@ -15,6 +16,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   days_illegal_activity: just_num
   times_drug_possession: just_num

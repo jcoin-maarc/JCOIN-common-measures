@@ -6,6 +6,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   util_yn:
     0: 'No'
     1: 'Yes'
@@ -15,6 +16,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
   util_agreement:
     1: Strongly agree
     2: Somewhat agree
@@ -27,6 +29,7 @@ value_labels:
     .d: Legitimately skipped
     .e: Not collected
     .f: Missing in error
+    .g: Confidential
 field_to_value_label:
   times_er_visits: util_num
   nights_hospital_detox: util_num
