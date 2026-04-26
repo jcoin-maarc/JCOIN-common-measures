@@ -249,17 +249,6 @@ field_to_value_label:
   work_pension: demo_yn
   work_retirement_plan: demo_yn
   have_health_insurance: demo_yn
-  insured_private: demo_yn
-  insured_medicare: demo_yn
-  insured_medigap: demo_yn
-  insured_medicaid: demo_yn
-  insured_chip: demo_yn
-  insured_military: demo_yn
-  insured_indian: demo_yn
-  insured_state: demo_yn
-  insured_other_gov: demo_yn
-  insured_single_service: demo_yn
-  insured_dont_know: demo_yn
   days_uninsured: demo_num
   days_self_help: demo_num
   days_drugfree_activity: demo_num
