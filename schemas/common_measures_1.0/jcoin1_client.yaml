@@ -3,6 +3,7 @@ title: JCOIN 1.0 Common Measures
 version: 1.1.0
 primaryKey:
 - jdc_person_id
+- visit_month
 missingValues:
 - Don't know
 - Refused
