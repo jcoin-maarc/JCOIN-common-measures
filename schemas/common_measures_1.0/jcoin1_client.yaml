@@ -2375,7 +2375,6 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: S3a
-  jcoin:notes: If 0, skip to S4.
 - name: times_naloxone
   type: integer
   title: 'Opioid Overdose Count: Receiving Naloxone'
@@ -2386,7 +2385,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: S3b
-  jcoin:notes: If 0, skip to S4.
+  jcoin:skipIf: 'times_opioid_overdose==0'
 - name: who_gave_naloxone_paramed
   type: boolean
   trueValues:
@@ -2400,6 +2399,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_firefighter
   type: boolean
   trueValues:
@@ -2413,6 +2413,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_police
   type: boolean
   trueValues:
@@ -2426,6 +2427,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_er
   type: boolean
   trueValues:
@@ -2439,6 +2441,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_spouse
   type: boolean
   trueValues:
@@ -2452,6 +2455,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_partner
   type: boolean
   trueValues:
@@ -2465,6 +2469,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_parent
   type: boolean
   trueValues:
@@ -2478,6 +2483,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_friend
   type: boolean
   trueValues:
@@ -2491,6 +2497,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_stranger
   type: boolean
   trueValues:
@@ -2504,6 +2511,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_self
   type: boolean
   trueValues:
@@ -2517,6 +2525,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_other
   type: boolean
   trueValues:
@@ -2530,6 +2539,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3c
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: who_gave_naloxone_other_desc
   type: string
   title: 'Describe other who administered naloxone'
@@ -2554,6 +2564,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_fentanyl
   type: boolean
   trueValues:
@@ -2567,6 +2578,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_opioids
   type: boolean
   trueValues:
@@ -2580,6 +2592,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_crack
   type: boolean
   trueValues:
@@ -2593,6 +2606,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_meth
   type: boolean
   trueValues:
@@ -2606,6 +2620,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_xanax
   type: boolean
   trueValues:
@@ -2619,6 +2634,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_marijuana
   type: boolean
   trueValues:
@@ -2632,6 +2648,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_alcohol
   type: boolean
   trueValues:
@@ -2645,6 +2662,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_other
   type: boolean
   trueValues:
@@ -2658,6 +2676,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3d
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: drugs_before_od_other_desc
   type: string
   title: Describe other drug(s) taken 4 hrs before overdose
@@ -2680,6 +2699,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3e
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: times_er_after_overdose
   type: integer
   title: Emergency Department Visit Count Following Overdose
@@ -2691,6 +2711,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3f
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: times_hospital_after_overdose
   type: integer
   title: Hospital Admissions Count Following Overdose
@@ -2702,6 +2723,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3g
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: tx_refer_after_overdose
   type: integer
   title: Substance Use Treatment Referral Count Following Overdose
@@ -2713,6 +2735,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: S3h
   jcoin:optional: true
+  jcoin:skipIf: '(times_opioid_overdose==0) | (times_naloxone==0)'
 - name: days_drug_use
   type: integer
   title: Drug Use Count
