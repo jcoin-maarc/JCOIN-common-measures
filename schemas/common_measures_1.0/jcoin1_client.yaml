@@ -3013,6 +3013,7 @@ fields:
   - 'Yes'
   falseValues:
   - 'No'
+  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
   title: 'Primary care visit reason: Mental health'
   description: '[Mental health?] Why did you visit a primary care provider? (ADD SKIP
     LOGIC)'
@@ -3021,6 +3022,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6b
   jcoin:optional: true
+  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
 - name: pc_reason_physical
   type: boolean
   trueValues:
@@ -3041,6 +3043,7 @@ fields:
   - 'Yes'
   falseValues:
   - 'No'
+  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
   title: 'Primary care visit reason:  Some other reason (specify)'
   description: '[Some other reason?] Why did you visit a primary care provider? (ADD
     SKIP LOGIC)'
@@ -3049,6 +3052,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6d
   jcoin:optional: true
+  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
 - name: pc_reason_other_specify
   type: string
   title: 'Primary care visit reason: Specify other reason'
@@ -3059,6 +3063,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6d
   jcoin:optional: true
+  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
 - name: op_tx_days
   type: integer
   title: 'Outpatient treament program for alcohol/substance use: Number of days'
@@ -3081,6 +3086,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U7a
   jcoin:optional: true
+  jcoin:skipIf: 'op_tx_days==0'
 - name: op_tx_days_online
   type: integer
   title: 'Outpatient treatment program: Number of days participating online'
@@ -3091,6 +3097,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U7b
   jcoin:optional: true
+  jcoin:skipIf: 'op_tx_days==0'
 - name: op_tx_days_doctor
   type: integer
   title: 'Outpatient treatment program: Number of days seeing doctor'
@@ -3101,6 +3108,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U7c
   jcoin:optional: true
+  jcoin:skipIf: 'op_tx_days==0'
 - name: op_tx_days_therapy
   type: integer
   title: 'Outpatient treatment program: Number of days participating in therapy'
@@ -3111,6 +3119,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U7d
   jcoin:optional: true
+  jcoin:skipIf: 'op_tx_days==0'
 - name: op_tx_days_moud_only
   type: integer
   title: 'Outpatient treatment program: Number of days for medication management'
@@ -3120,6 +3129,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U7e
   jcoin:optional: true
+  jcoin:skipIf: 'op_tx_days==0'
 - name: psych_visits
   type: integer
   title: 'Psychiatrist/psychologist:  Number of total visits'
@@ -3141,6 +3151,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U8a
   jcoin:optional: true
+  jcoin:skipIf: 'psych_visits==0'
 - name: psych_visits_online
   type: integer
   title: 'Psychiatrist/psychologist: Number of online visits'
@@ -3151,6 +3162,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U8b
   jcoin:optional: true
+  jcoin:skipIf: 'psych_visits==0'
 - name: counselor_visits
   type: integer
   title: 'Counselor/social worker: Number of total visits'
@@ -3163,7 +3175,7 @@ fields:
   jcoin:originalName: U9
   jcoin:optional: true
   jcoin:notes: If 0, skip to U13.
-- name: counselor_visits_in_person
+- - name: counselor_visits_in_person
   type: integer
   title: 'Counselor/social worker: Number of in-person visits'
   description: '[...did you physically visit the program (counselor/social worker)?]
@@ -3173,6 +3185,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U9a
   jcoin:optional: true
+  jcoin:skipIf: 'counselor_visits==0'
 - name: counselor_visits_online
   type: integer
   title: 'Counselor/social worker: Number of online visits'
@@ -3183,6 +3196,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U9b
   jcoin:optional: true
+  jcoin:skipIf: 'counselor_visits==0'
 - name: healthcare_expense
   type: number
   title: Healthcare cost
@@ -3226,6 +3240,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U14a
   jcoin:optional: true
+  jcoin:skipIf: 'received_sud_tx=="No"'
 - name: sud_tx_satisfied
   type: string
   title: 'Substance use tx provider:  Satisfaction'
@@ -3245,6 +3260,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U14b
   jcoin:optional: true
+  jcoin:skipIf: 'received_sud_tx=="No"'
 - name: sud_tx_efficient
   type: string
   title: 'Substance use tx provider:  Efficient staff'
@@ -3264,6 +3280,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U14c
   jcoin:optional: true
+  jcoin:skipIf: 'received_sud_tx=="No"'
 - name: sud_tx_personal
   type: string
   title: 'Substance use tx provider:  Personal counseling'
@@ -3283,6 +3300,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U14d
   jcoin:optional: true
+  jcoin:skipIf: 'received_sud_tx=="No"'
 - name: sud_tx_moud
   type: string
   title: 'Substance use tx provider:  Medication assistance for opioid use'
@@ -3302,6 +3320,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U14e
   jcoin:optional: true
+  jcoin:skipIf: 'received_sud_tx=="No"'
 - name: intv_while_incarc
   type: boolean
   trueValues:
