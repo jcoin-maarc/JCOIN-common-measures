@@ -755,6 +755,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D7d2
   jcoin:optional: true
+  jcoin:skipIf: 'household_public_assist_any == "No"'
 - name: household_nonemploy_any
   type: boolean
   trueValues:
@@ -790,6 +791,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D7e2
   jcoin:optional: true
+  jcoin:skipIf: 'household_nonemploy_any == "No"'
 - name: household_income_illegal_any
   type: boolean
   trueValues:
@@ -825,6 +827,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D7f2
   jcoin:optional: true
+  jcoin:skipIf: 'household_income_illegal_any == "No"'
 - name: current_work_school
   type: string
   title: Current school or work situation
@@ -899,6 +902,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D8b
+  jcoin:skipIf: 'work_days == 0'
 - name: work_hours_week
   type: integer
   title: Hours per week worked
@@ -908,6 +912,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D8b1
+  jcoin:skipIf: 'work_days == 0'
 - name: work_hourly_wage
   type: number
   title: Hourly rate
@@ -918,6 +923,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D8c
+  jcoin:skipIf: 'work_days == 0'
 - name: work_health_insurance
   type: boolean
   trueValues:
@@ -932,6 +938,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D8d
   jcoin:optional: true
+  jcoin:skipIf: 'work_days == 0'
 - name: work_paid_time_off
   type: boolean
   trueValues:
@@ -946,6 +953,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D8d
   jcoin:optional: true
+  jcoin:skipIf: 'work_days == 0'
 - name: work_pension
   type: boolean
   trueValues:
@@ -960,6 +968,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D8d
   jcoin:optional: true
+  jcoin:skipIf: 'work_days == 0'
 - name: work_retirement_plan
   type: boolean
   trueValues:
@@ -975,6 +984,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D8d
   jcoin:optional: true
+  jcoin:skipIf: 'work_days == 0'
 - name: work_occupation
   type: string
   title: Occupation
@@ -984,6 +994,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: D8e
   jcoin:optional: true
+  jcoin:skipIf: 'work_days == 0'
 - name: have_health_insurance
   type: boolean
   trueValues:
@@ -1016,6 +1027,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_medicare
   type: boolean
   trueValues:
@@ -1034,6 +1046,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_medigap
   type: boolean
   trueValues:
@@ -1052,6 +1065,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_medicaid
   type: boolean
   trueValues:
@@ -1071,6 +1085,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_chip
   type: boolean
   trueValues:
@@ -1090,6 +1105,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_military
   type: boolean
   trueValues:
@@ -1109,6 +1125,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_indian
   type: boolean
   trueValues:
@@ -1127,6 +1144,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_state
   type: boolean
   trueValues:
@@ -1146,6 +1164,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_other_gov
   type: boolean
   trueValues:
@@ -1164,6 +1183,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_single_service
   type: boolean
   trueValues:
@@ -1183,6 +1203,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: insured_dont_know
   type: boolean
   trueValues:
@@ -1201,6 +1222,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
+  jcoin:skipIf: 'have_health_insurance == "No'
 - name: days_uninsured
   type: integer
   title: Days uninsured
@@ -1354,6 +1376,7 @@ fields:
   jcoin:originalName: O3a
   jcoin:optional: true
   jcoin:notes: If No, skip to P1a.
+  jcoin:skipIf: 'narcan_received == "No'
 - name: narcan_refilled
   type: boolean
   trueValues:
@@ -1368,6 +1391,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: O3b
   jcoin:optional: true
+  jcoin:skipIf: '(narcan_received == "No) | (narcan_used == "No")'
 - name: difficulty_chores
   type: string
   title: Difficulty with chores and house keeping
@@ -2081,6 +2105,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3a
+  jcoin:skipIf: 'ever_dx_hiv != "No"'
 - name: ever_dx_hcv
   type: boolean
   trueValues:
@@ -2109,6 +2134,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3b
+  jcoin:skipIf: 'ever_dx_hcv != "No"'
 - name: ever_dx_hepb
   type: boolean
   trueValues:
@@ -2137,6 +2163,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3c
+  jcoin:skipIf: 'ever_dx_hepb != "No"'
 - name: ever_dx_std
   type: boolean
   trueValues:
@@ -2167,6 +2194,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3d
+  jcoin:skipIf: 'ever_dx_std != "No"'
 - name: ever_dx_tb
   type: boolean
   trueValues:
@@ -2196,6 +2224,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3e
+  jcoin:skipIf: 'ever_dx_tb != "No"'
 - name: ever_dx_covid
   type: boolean
   trueValues:
@@ -2225,6 +2254,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3f
+  jcoin:skipIf: 'ever_dx_covid != "No"'
 - name: last_drug_use
   type: string
   title: Last time drug use
@@ -3340,6 +3370,7 @@ fields:
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
   jcoin:originalName: U14g
+  jcoin:skipIf: 'intv_while_incarc=="No"'
 - name: ever_rx_moud
   type: boolean
   trueValues:
@@ -3361,6 +3392,7 @@ fields:
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
   jcoin:originalName: U15a1
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_daily_bup
   type: integer
   title: 'Days PTI: Buprenorphine-naloxone or buprenorphine daily sublingual'
@@ -3371,7 +3403,8 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15a2
   jcoin:optional: true
-- name: dose_pti_daily_bup
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
+ - name: dose_pti_daily_bup
   type: string
   title: 'PTI Dose: Buprenorphine-naloxone or buprenorphine daily sublingual'
   description: 'Dose per day prior to incarceration: Buprenorphine-naloxone or buprenorphine
@@ -3381,6 +3414,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15a3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_daily_bup
   type: integer
   title: 'Days in past 30: Buprenorphine-naloxone or buprenorphine daily sublingual'
@@ -3391,6 +3425,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15a4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_daily_bup
   type: string
   title: 'Dose: Buprenorphine-naloxone or buprenorphine daily sublingual'
@@ -3400,6 +3435,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15a5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_sublocade
   type: integer
   title: 'Lifetime months: SUBLOCADE'
@@ -3407,6 +3443,7 @@ fields:
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
   jcoin:originalName: U15b1
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_sublocade
   type: integer
   title: 'Days PTI: SUBLOCADE'
@@ -3416,6 +3453,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15b2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_sublocade
   type: string
   title: 'PTI Dose: SUBLOCADE'
@@ -3424,6 +3462,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15b3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_sublocade
   type: integer
   title: 'Days in past 30: SUBLOCADE'
@@ -3432,6 +3471,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15b4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_sublocade
   type: string
   title: 'dose: SUBLOCADE'
@@ -3440,6 +3480,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15b5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_weekly_brixadi
   type: integer
   title: 'Lifetime months: Weekly BRIXADI'
@@ -3448,6 +3489,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15c1
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_weekly_brixadi
   type: integer
   title: 'Days PTI: Weekly BRIXADI'
@@ -3457,6 +3499,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15c2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_weekly_brixadi
   type: string
   title: 'PTI Dose: Weekly BRIXADI'
@@ -3466,6 +3509,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15c3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_weekly_brixadi
   type: integer
   title: 'Days in past 30: Weekly BRIXADI'
@@ -3474,6 +3518,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15c4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_weekly_brixadi
   type: string
   title: 'dose: Weekly BRIXADI'
@@ -3482,6 +3527,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15c5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_monthly_brixadi
   type: integer
   title: 'Lifetime months: Monthly BRIXADI'
@@ -3490,6 +3536,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15d1
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_monthly_brixadi
   type: integer
   title: 'Days PTI: Monthly BRIXADI'
@@ -3499,6 +3546,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15d2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_monthly_brixadi
   type: string
   title: 'PTI Dose: Monthly BRIXADI'
@@ -3508,6 +3556,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15d3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_monthly_brixadi
   type: integer
   title: 'Days in past 30: Monthly BRIXADI'
@@ -3516,6 +3565,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15d4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_monthly_brixadi
   type: string
   title: 'dose: Monthly BRIXADI'
@@ -3524,6 +3574,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15d5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_probuphine_implant
   type: integer
   title: 'Lifetime months: Probuphine'
@@ -3532,6 +3583,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15e1
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_probuphine_implant
   type: integer
   title: 'Days PTI: Probuphine'
@@ -3541,6 +3593,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15e2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_probuphine_implant
   type: string
   title: 'PTI Dose: Probuphine'
@@ -3550,6 +3603,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15e3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_probuphine_implant
   type: integer
   title: 'Days in past 30: Probuphine'
@@ -3558,6 +3612,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15e4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_probuphine_implant
   type: string
   title: 'dose: Probuphine'
@@ -3566,6 +3621,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15e5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_daily_ntx
   type: integer
   title: 'Lifetime months: Naltrexone daily (oral)'
@@ -3573,6 +3629,7 @@ fields:
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
   jcoin:originalName: U15f1
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_daily_ntx
   type: integer
   title: 'Days PTI: Naltrexone daily (oral)'
@@ -3581,6 +3638,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15f2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_daily_ntx
   type: string
   title: 'PTI Dose: Naltrexone daily (oral)'
@@ -3589,6 +3647,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15f3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_daily_ntx
   type: integer
   title: 'Days in past 30: Naltrexone daily (oral)'
@@ -3597,6 +3656,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15f4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_daily_ntx
   type: string
   title: 'dose: Naltrexone daily (oral)'
@@ -3605,6 +3665,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15f5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_monthly_vivitrol
   type: integer
   title: 'Lifetime months: Vivitrol'
@@ -3621,6 +3682,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15g2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_monthly_vivitrol
   type: string
   title: 'PTI Dose: Vivitrol'
@@ -3630,6 +3692,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15g3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_monthly_vivitrol
   type: integer
   title: 'Days in past 30: Vivitrol'
@@ -3638,6 +3701,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15g4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_monthly_vivitrol
   type: string
   title: 'dose: Vivitrol'
@@ -3646,6 +3710,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15g5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: months_methadone
   type: integer
   title: 'Lifetime months: Methadone'
@@ -3653,6 +3718,7 @@ fields:
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
   jcoin:originalName: U15h1
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: days_pti_methadone
   type: integer
   title: 'Days PTI: Methadone'
@@ -3661,6 +3727,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15h2
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: dose_pti_methadone
   type: string
   title: 'PTI Dose: Methadone'
@@ -3669,6 +3736,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15h3
   jcoin:optional: true
+  jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
 - name: days_methadone
   type: integer
   title: 'Days in past 30: Methadone'
@@ -3677,6 +3745,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15h4
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: dose_methadone
   type: string
   title: 'dose: Methadone'
@@ -3685,6 +3754,7 @@ fields:
   jcoin:baseline: true
   jcoin:originalName: U15h5
   jcoin:optional: true
+  jcoin:skipIf: 'ever_rx_moud == "No"'
 - name: meds_since_last_assmnt
   type: boolean
   trueValues:
@@ -3708,6 +3778,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_sub.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_bup_dose
   type: number
   title: Buprenorphine-naloxone or buprenorphine daily dose/day ("usual dose")
@@ -3715,6 +3786,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No")'
 - name: moud_bup_days
   type: integer
   title: Buprenorphine-naloxone or buprenorphine daily treatment days
@@ -3722,6 +3794,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No")'
 - name: moud_bup_currently
   type: boolean
   trueValues:
@@ -3733,6 +3806,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No")'
 - name: moud_bup_stopped
   type: boolean
   trueValues:
@@ -3745,6 +3819,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_bup_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No")'
 - name: moud_bup_reason_trans
   type: boolean
   trueValues:
@@ -3758,6 +3833,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_comp
   type: boolean
   trueValues:
@@ -3771,6 +3847,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_incar
   type: boolean
   trueValues:
@@ -3784,6 +3861,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_diss
   type: boolean
   trueValues:
@@ -3797,6 +3875,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_nopay
   type: boolean
   trueValues:
@@ -3810,6 +3889,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_prob
   type: boolean
   trueValues:
@@ -3823,6 +3903,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_nosup
   type: boolean
   trueValues:
@@ -3836,6 +3917,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_asked
   type: boolean
   trueValues:
@@ -3849,6 +3931,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_oth
   type: boolean
   trueValues:
@@ -3862,6 +3945,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_reason_oth_desc
   type: string
   title: 'Reason stopped buprenorphine-naloxone or buprenorphine daily: Other described'
@@ -3869,6 +3953,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No" | moud_bup_stopped == "No")'
 - name: moud_bup_satis_med
   type: string
   title: Overall satisfaction with buprehorphine-naloxone or buprenorphine daily
@@ -3883,6 +3968,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No")'
 - name: moud_bup_satis_prog
   type: string
   title: Satisfaction with provider of buprehorphine-naloxone or buprenorphine daily
@@ -3897,6 +3983,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_bup == "No")'
 - name: moud_sub
   type: boolean
   trueValues:
@@ -3909,6 +3996,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_wbrix.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_sub_dose
   type: number
   title: Buprenorphine monthly injection (SUBLOCADE) dose/day ("usual dose")
@@ -3916,6 +4004,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No")'
 - name: moud_sub_days
   type: integer
   title: Buprenorphine monthly injection (SUBLOCADE) treatment days
@@ -3923,6 +4012,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No")'
 - name: moud_sub_currently
   type: boolean
   trueValues:
@@ -3934,6 +4024,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No")'
 - name: moud_sub_stopped
   type: boolean
   trueValues:
@@ -3946,6 +4037,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_sub_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No")'
 - name: moud_sub_reason_trans
   type: boolean
   trueValues:
@@ -3959,6 +4051,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_comp
   type: boolean
   trueValues:
@@ -3972,6 +4065,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_incar
   type: boolean
   trueValues:
@@ -3985,6 +4079,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_diss
   type: boolean
   trueValues:
@@ -3998,6 +4093,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_nopay
   type: boolean
   trueValues:
@@ -4011,6 +4107,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_prob
   type: boolean
   trueValues:
@@ -4024,6 +4121,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_nosup
   type: boolean
   trueValues:
@@ -4037,6 +4135,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_asked
   type: boolean
   trueValues:
@@ -4050,6 +4149,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_oth
   type: boolean
   trueValues:
@@ -4063,6 +4163,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_reason_oth_desc
   type: string
   title: 'Reason stopped buprenorphine monthly injection (SUBLOCADE): Other described'
@@ -4070,6 +4171,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No" | moud_sub_stopped == "No")'
 - name: moud_sub_satis_med
   type: string
   title: Overall satisfaction with buprenorphine monthly injection (SUBLOCADE)
@@ -4084,6 +4186,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No")'
 - name: moud_sub_satis_prog
   type: string
   title: Satisfaction with provider of buprenorphine monthly injection (SUBLOCADE)
@@ -4098,6 +4201,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_sub == "No")'
 - name: moud_wbrix
   type: boolean
   trueValues:
@@ -4110,6 +4214,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_mbrix.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_wbrix_dose
   type: number
   title: Buprenorphine weekly injection (BRIXADI) dose/day ("usual dose")
@@ -4117,6 +4222,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No")'
 - name: moud_wbrix_days
   type: integer
   title: Buprenorphine weekly injection (BRIXADI) treatment days
@@ -4124,6 +4230,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No")'
 - name: moud_wbrix_currently
   type: boolean
   trueValues:
@@ -4135,6 +4242,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No")'
 - name: moud_wbrix_stopped
   type: boolean
   trueValues:
@@ -4147,6 +4255,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_wbrix_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No")'
 - name: moud_wbrix_reason_trans
   type: boolean
   trueValues:
@@ -4160,6 +4269,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_comp
   type: boolean
   trueValues:
@@ -4173,6 +4283,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_incar
   type: boolean
   trueValues:
@@ -4186,6 +4297,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_diss
   type: boolean
   trueValues:
@@ -4199,6 +4311,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_nopay
   type: boolean
   trueValues:
@@ -4212,6 +4325,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_prob
   type: boolean
   trueValues:
@@ -4225,6 +4339,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_nosup
   type: boolean
   trueValues:
@@ -4238,6 +4353,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_asked
   type: boolean
   trueValues:
@@ -4251,6 +4367,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_oth
   type: boolean
   trueValues:
@@ -4264,6 +4381,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_reason_oth_desc
   type: string
   title: 'Reason stopped buprenorphine weekly injection (BRIXADI): Other described'
@@ -4271,6 +4389,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No" | moud_wbrix_stopped == "No")'
 - name: moud_wbrix_satis_med
   type: string
   title: Overall satisfaction with buprenorphine weekly injection (BRIXADI)
@@ -4285,6 +4404,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No")'
 - name: moud_wbrix_satis_prog
   type: string
   title: Satisfaction with provider of buprenorphine weekly injection (BRIXADI)
@@ -4299,6 +4419,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_wbrix == "No")'
 - name: moud_mbrix
   type: boolean
   trueValues:
@@ -4311,6 +4432,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_prob.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_mbrix_dose
   type: number
   title: Buprenorphine monthly injection (BRIXADI) dose/day ("usual dose")
@@ -4318,6 +4440,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No")'
 - name: moud_mbrix_days
   type: integer
   title: Buprenorphine monthly injection (BRIXADI) treatment days
@@ -4325,6 +4448,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No")'
 - name: moud_mbrix_currently
   type: boolean
   trueValues:
@@ -4336,6 +4460,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No")'
 - name: moud_mbrix_stopped
   type: boolean
   trueValues:
@@ -4348,6 +4473,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_mbrix_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No")'
 - name: moud_mbrix_reason_trans
   type: boolean
   trueValues:
@@ -4361,6 +4487,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_comp
   type: boolean
   trueValues:
@@ -4374,6 +4501,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_incar
   type: boolean
   trueValues:
@@ -4387,6 +4515,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_diss
   type: boolean
   trueValues:
@@ -4400,6 +4529,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_nopay
   type: boolean
   trueValues:
@@ -4413,6 +4543,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_prob
   type: boolean
   trueValues:
@@ -4426,6 +4557,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_nosup
   type: boolean
   trueValues:
@@ -4439,6 +4571,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_asked
   type: boolean
   trueValues:
@@ -4452,6 +4585,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_oth
   type: boolean
   trueValues:
@@ -4465,6 +4599,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_reason_oth_desc
   type: string
   title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Other described'
@@ -4472,6 +4607,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
 - name: moud_mbrix_satis_med
   type: string
   title: Overall satisfaction with buprenorphine monthly injection (BRIXADI)
@@ -4486,6 +4622,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No")'
 - name: moud_mbrix_satis_prog
   type: string
   title: Satisfaction with provider of buprenorphine monthly injection (BRIXADI)
@@ -4500,6 +4637,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No")'
 - name: moud_prob
   type: boolean
   trueValues:
@@ -4512,6 +4650,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_nal.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_prob_dose
   type: number
   title: Buprenorphine 6-month implant (Probuphine) dose/day ("usual dose")
@@ -4519,6 +4658,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No")'
 - name: moud_prob_days
   type: integer
   title: Buprenorphine 6-month implant (Probuphine) treatment days
@@ -4526,6 +4666,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No")'
 - name: moud_prob_currently
   type: boolean
   trueValues:
@@ -4537,6 +4678,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No")'
 - name: moud_prob_stopped
   type: boolean
   trueValues:
@@ -4549,6 +4691,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_prob_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No")'
 - name: moud_prob_reason_trans
   type: boolean
   trueValues:
@@ -4562,6 +4705,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_comp
   type: boolean
   trueValues:
@@ -4575,6 +4719,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_incar
   type: boolean
   trueValues:
@@ -4588,6 +4733,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_diss
   type: boolean
   trueValues:
@@ -4601,6 +4747,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_nopay
   type: boolean
   trueValues:
@@ -4614,6 +4761,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_prob
   type: boolean
   trueValues:
@@ -4627,6 +4775,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_nosup
   type: boolean
   trueValues:
@@ -4640,6 +4789,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_asked
   type: boolean
   trueValues:
@@ -4653,6 +4803,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_oth
   type: boolean
   trueValues:
@@ -4666,6 +4817,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_reason_oth_desc
   type: string
   title: 'Reason stopped buprenorphine 6-month implant (Probuphine): Other described'
@@ -4673,6 +4825,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_prob_satis_med
   type: string
   title: Overall satisfaction with buprenorphine 6-month implant (Probuphine)
@@ -4687,6 +4840,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No")'
 - name: moud_prob_satis_prog
   type: string
   title: Satisfaction with provider of buprenorphine 6-month implant (Probuphine)
@@ -4701,6 +4855,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No")'
 - name: moud_nal
   type: boolean
   trueValues:
@@ -4713,6 +4868,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_viv.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_nal_dose
   type: number
   title: Naltrexone (oral) dose/day ("usual dose")
@@ -4720,6 +4876,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_nal == "No")'
 - name: moud_nal_days
   type: integer
   title: Naltrexone (oral) treatment days
@@ -4727,6 +4884,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_nal_currently
   type: boolean
   trueValues:
@@ -4738,6 +4896,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_nal_stopped
   type: boolean
   trueValues:
@@ -4750,6 +4909,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_nal_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_nal_reason_trans
   type: boolean
   trueValues:
@@ -4888,6 +5048,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_nal_satis_prog
   type: string
   title: Satisfaction with provider of naltrexone (oral)
@@ -4902,6 +5063,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_prob == "No" | moud_prob_stopped == "No")'
 - name: moud_viv
   type: boolean
   trueValues:
@@ -4914,6 +5076,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_meth.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_viv_dose
   type: number
   title: Naltrexone monthly injection (Vivitrol) dose/day ("usual dose")
@@ -4921,6 +5084,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No")'
 - name: moud_viv_days
   type: integer
   title: Naltrexone monthly injection (Vivitrol) treatment days
@@ -4928,6 +5092,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No")'
 - name: moud_viv_currently
   type: boolean
   trueValues:
@@ -4939,6 +5104,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No")'
 - name: moud_viv_stopped
   type: boolean
   trueValues:
@@ -4951,6 +5117,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_viv_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No")'
 - name: moud_viv_reason_trans
   type: boolean
   trueValues:
@@ -4964,6 +5131,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_comp
   type: boolean
   trueValues:
@@ -4977,6 +5145,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_incar
   type: boolean
   trueValues:
@@ -4990,6 +5159,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_diss
   type: boolean
   trueValues:
@@ -5003,6 +5173,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_nopay
   type: boolean
   trueValues:
@@ -5016,6 +5187,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_prob
   type: boolean
   trueValues:
@@ -5029,6 +5201,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_nosup
   type: boolean
   trueValues:
@@ -5042,6 +5215,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_asked
   type: boolean
   trueValues:
@@ -5055,6 +5229,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_oth
   type: boolean
   trueValues:
@@ -5068,6 +5243,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_reason_oth_desc
   type: string
   title: 'Reason stopped naltrexone monthly injection (Vivitrol): Other described'
@@ -5075,6 +5251,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No" | moud_viv_stopped == "No")'
 - name: moud_viv_satis_med
   type: string
   title: Overall satisfaction with naltrexone monthly injection (Vivitrol)
@@ -5089,6 +5266,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No")'
 - name: moud_viv_satis_prog
   type: string
   title: Satisfaction with provider of naltrexone monthly injection (Vivitrol)
@@ -5103,6 +5281,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_viv == "No")'
 - name: moud_meth
   type: boolean
   trueValues:
@@ -5115,6 +5294,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to m1.
+  jcoin:skipIf: 'meds_since_last_assmnt == "No"'
 - name: moud_meth_dose
   type: number
   title: Methadone daily dose/day ("usual dose")
@@ -5122,6 +5302,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No")'
 - name: moud_meth_days
   type: integer
   title: Methadone daily treatment days
@@ -5140,6 +5321,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No")'
 - name: moud_meth_stopped
   type: boolean
   trueValues:
@@ -5152,6 +5334,7 @@ fields:
   jcoin:followup: true
   jcoin:optional: true
   jcoin:notes: If No, skip to moud_meth_satis_med.
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No")'
 - name: moud_meth_reason_trans
   type: boolean
   trueValues:
@@ -5165,6 +5348,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_comp
   type: boolean
   trueValues:
@@ -5178,6 +5362,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_incar
   type: boolean
   trueValues:
@@ -5191,6 +5376,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_diss
   type: boolean
   trueValues:
@@ -5204,6 +5390,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_nopay
   type: boolean
   trueValues:
@@ -5217,6 +5404,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_prob
   type: boolean
   trueValues:
@@ -5230,6 +5418,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_nosup
   type: boolean
   trueValues:
@@ -5243,6 +5432,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_asked
   type: boolean
   trueValues:
@@ -5256,6 +5446,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_oth
   type: boolean
   trueValues:
@@ -5269,6 +5460,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_reason_oth_desc
   type: string
   title: 'Reason stopped methadone daily: Other described'
@@ -5276,6 +5468,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No" | moud_meth_stopped == "No")'
 - name: moud_meth_satis_med
   type: string
   title: Overall satisfaction with methadone daily
@@ -5290,6 +5483,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No")'
 - name: moud_meth_satis_prog
   type: string
   title: Satisfaction with provider of methadone daily
@@ -5304,6 +5498,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_meth == "No")'
 - name: oud_tx_not_appropriate
   type: boolean
   trueValues:
@@ -5332,6 +5527,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_detox
   type: boolean
   trueValues:
@@ -5346,6 +5542,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_op
   type: boolean
   trueValues:
@@ -5360,6 +5557,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_iop
   type: boolean
   trueValues:
@@ -5374,6 +5572,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_residential
   type: boolean
   trueValues:
@@ -5388,6 +5587,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_other_tx
   type: boolean
   trueValues:
@@ -5402,6 +5602,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_other_specify
   type: string
   title: 'Preferred OUD treatment: Other specified'
@@ -5412,6 +5613,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_no_treatment
   type: boolean
   trueValues:
@@ -5426,6 +5628,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_oud_dk
   type: boolean
   trueValues:
@@ -5440,6 +5643,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
+  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
 - name: prefer_moud_type
   type: string
   title: Preferred OUD medication
@@ -5455,6 +5659,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: M3
   jcoin:notes: Ask only if m2 equals OUD medication.
+  jcoin:skipIf: 'prefer_oud_meds == FALSE'
 - name: prefer_which_bup
   type: string
   title: Type of buprenorphine preferred
@@ -5470,6 +5675,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: M4
   jcoin:notes: Ask only if m3 equals Buprenorphine/Suboxone.
+  jcoin:skipIf: 'prefer_moud_type != "Buprenorphine/Suboxone"'
 - name: prefer_which_naloxone
   type: string
   title: Type of naltrexone preferred
@@ -5484,6 +5690,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: M5
   jcoin:notes: Ask only if m3 equals Naltrexone/Vivitrol.
+  jcoin:skipIf: 'prefer_moud_type != "Naltrexone/Vivitrol"'
 - name: days_illegal_activity
   type: integer
   title: Days involved in illegal activities
@@ -5502,6 +5709,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a1
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_public_drunk
   type: integer
   title: Drunkenness or other liquor law violations
@@ -5511,6 +5719,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a2
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_dui
   type: integer
   title: Driving under the influence or while intoxicated
@@ -5520,6 +5729,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a3
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_drug_dealing
   type: integer
   title: Possession, dealing, distribution or sale of drugs
@@ -5529,6 +5739,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a4
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_vandalism
   type: integer
   title: Vandalism or property destruction
@@ -5537,6 +5748,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a5
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_stolen_goods
   type: integer
   title: Receiving, possessing or selling stolen goods
@@ -5545,6 +5757,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a6
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_forgery
   type: integer
   title: Forgery, fraud or embezzlement
@@ -5553,6 +5766,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a7
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_shoplift
   type: integer
   title: Shoplifting
@@ -5562,6 +5776,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a8
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_theft
   type: integer
   title: Larceny or theft
@@ -5570,6 +5785,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a9
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_burglary
   type: integer
   title: Burglary or breaking and entering
@@ -5578,6 +5794,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a10
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_auto_theft
   type: integer
   title: Motor vehicle theft
@@ -5587,6 +5804,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a11
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_carjacking
   type: integer
   title: Carjacking
@@ -5596,6 +5814,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a12
   jcoin:notes: Optional during baseline.
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_assault
   type: integer
   title: Simple assault or battery
@@ -5605,6 +5824,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a13
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_robbery
   type: integer
   title: Robbery
@@ -5614,6 +5834,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a14
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_aggravated_assault
   type: integer
   title: Aggravated assault or battery
@@ -5623,6 +5844,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a15
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_rape
   type: integer
   title: Forcible rape
@@ -5632,6 +5854,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a16
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_homicide
   type: integer
   title: Murder, homicide or non-negligent manslaughter
@@ -5641,6 +5864,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a17
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_arson
   type: integer
   title: Arson
@@ -5649,6 +5873,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a18
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_prostitution
   type: integer
   title: Prostitution, pimping or commercialized sex
@@ -5658,6 +5883,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J1a19
   jcoin:optional: true
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: times_other_unlawful
   type: integer
   title: Other unlawful activities
@@ -5666,6 +5892,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a99
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: other_unlawful_spec
   type: string
   title: Other unlawful activity specified
@@ -5674,6 +5901,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1a99
+  jcoin:skipIf: 'days_illegal_activity == 0'
 - name: number_charged_arrests
   type: integer
   title: Number of times arrested and charged
@@ -5692,6 +5920,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2a
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_drunk
   type: integer
   title: Arrests for drunkenness
@@ -5701,6 +5930,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2b
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_dui
   type: integer
   title: Arrests for DUI
@@ -5710,6 +5940,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2c
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_drug_dealing
   type: integer
   title: Arrests for drugs
@@ -5719,6 +5950,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2d
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_vandalism
   type: integer
   title: Arrests for vandalism or property destruction
@@ -5728,6 +5960,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2e
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_stolen_goods
   type: integer
   title: Arrests for stolen goods
@@ -5737,6 +5970,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2f
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_forgery
   type: integer
   title: Arrests for forgery
@@ -5746,6 +5980,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2g
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_shoplifting
   type: integer
   title: Arrests for shoplifting
@@ -5755,6 +5990,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2h
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_theft
   type: integer
   title: Arrests for larceny or theft
@@ -5764,6 +6000,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2i
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_burglary
   type: integer
   title: Arrests for burglary
@@ -5773,6 +6010,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2j
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_auto_theft
   type: integer
   title: Arrests for vehicle theft
@@ -5782,6 +6020,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2k
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_carjacking
   type: integer
   title: Arrests for car jacking
@@ -5791,6 +6030,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2l
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_assault
   type: integer
   title: Arrests for simple assault and battery
@@ -5800,6 +6040,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2m
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_robbery
   type: integer
   title: Arrests for robbery
@@ -5809,6 +6050,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2n
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_aggravated
   type: integer
   title: Arrests for aggravated assault or battery
@@ -5818,6 +6060,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2o
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_rape
   type: integer
   title: Arrests for rape
@@ -5827,6 +6070,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2p
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_homicide
   type: integer
   title: Arrests for murder
@@ -5836,6 +6080,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2q
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_arson
   type: integer
   title: Arrests for arson
@@ -5844,6 +6089,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J2r
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_prostitution
   type: integer
   title: Arrests for prostitution
@@ -5853,6 +6099,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2s
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: number_arrest_other
   type: integer
   title: Arrests for other charges
@@ -5862,6 +6109,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: J2t
   jcoin:optional: true
+  jcoin:skipIf: 'number_charged_arrests == 0'
 - name: days_electronic_monitoring
   type: integer
   title: Days on electronic monitoring
@@ -5915,6 +6163,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J3f
+  jcoin:skipIf: 'currently_incarcerated == FALSE'
 - name: days_parole
   type: integer
   title: Days on parole
