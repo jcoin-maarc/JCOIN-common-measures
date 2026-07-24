@@ -625,6 +625,7 @@ fields:
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:originalName: D5a
+  jcoin:skipIf: 'marital_status == "Married"'
 - name: educ_category
   type: string
   title: Education
@@ -1027,7 +1028,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_medicare
   type: boolean
   trueValues:
@@ -1046,7 +1047,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_medigap
   type: boolean
   trueValues:
@@ -1065,7 +1066,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_medicaid
   type: boolean
   trueValues:
@@ -1085,7 +1086,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_chip
   type: boolean
   trueValues:
@@ -1105,7 +1106,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_military
   type: boolean
   trueValues:
@@ -1125,7 +1126,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_indian
   type: boolean
   trueValues:
@@ -1144,7 +1145,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_state
   type: boolean
   trueValues:
@@ -1164,7 +1165,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_other_gov
   type: boolean
   trueValues:
@@ -1183,7 +1184,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_single_service
   type: boolean
   trueValues:
@@ -1203,7 +1204,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: insured_dont_know
   type: boolean
   trueValues:
@@ -1222,7 +1223,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9a
-  jcoin:skipIf: 'have_health_insurance == "No'
+  jcoin:skipIf: 'have_health_insurance == "No"'
 - name: days_uninsured
   type: integer
   title: Days uninsured
@@ -1376,7 +1377,7 @@ fields:
   jcoin:originalName: O3a
   jcoin:optional: true
   jcoin:notes: If No, skip to P1a.
-  jcoin:skipIf: 'narcan_received == "No'
+  jcoin:skipIf: 'narcan_received == "No"'
 - name: narcan_refilled
   type: boolean
   trueValues:
@@ -1391,7 +1392,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: O3b
   jcoin:optional: true
-  jcoin:skipIf: '(narcan_received == "No) | (narcan_used == "No")'
+  jcoin:skipIf: '(narcan_received == "No") | (narcan_used == "No")'
 - name: difficulty_chores
   type: string
   title: Difficulty with chores and house keeping
@@ -2105,7 +2106,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3a
-  jcoin:skipIf: 'ever_dx_hiv != "No"'
+  jcoin:skipIf: 'ever_dx_hiv != "Yes"'
 - name: ever_dx_hcv
   type: boolean
   trueValues:
@@ -2134,7 +2135,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3b
-  jcoin:skipIf: 'ever_dx_hcv != "No"'
+  jcoin:skipIf: 'ever_dx_hcv != "Yes"'
 - name: ever_dx_hepb
   type: boolean
   trueValues:
@@ -2163,7 +2164,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3c
-  jcoin:skipIf: 'ever_dx_hepb != "No"'
+  jcoin:skipIf: 'ever_dx_hepb != "Yes"'
 - name: ever_dx_std
   type: boolean
   trueValues:
@@ -2194,7 +2195,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3d
-  jcoin:skipIf: 'ever_dx_std != "No"'
+  jcoin:skipIf: 'ever_dx_std != "Yes"'
 - name: ever_dx_tb
   type: boolean
   trueValues:
@@ -2224,7 +2225,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3e
-  jcoin:skipIf: 'ever_dx_tb != "No"'
+  jcoin:skipIf: 'ever_dx_tb != "Yes"'
 - name: ever_dx_covid
   type: boolean
   trueValues:
@@ -2254,7 +2255,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3f
-  jcoin:skipIf: 'ever_dx_covid != "No"'
+  jcoin:skipIf: 'ever_dx_covid != "Yes"'
 - name: last_drug_use
   type: string
   title: Last time drug use
@@ -3037,6 +3038,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6a
   jcoin:optional: true
+  jcoin:skipIf: 'visits_primary_care == 0'
 - name: pc_reason_mh
   type: boolean
   trueValues:
@@ -3052,7 +3054,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6b
   jcoin:optional: true
-  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
+  jcoin:skipIf: 'visits_primary_care == 0'
 - name: pc_reason_physical
   type: boolean
   trueValues:
@@ -3067,6 +3069,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6c
   jcoin:optional: true
+  jcoin:skipIf: 'visits_primary_care == 0'
 - name: pc_reason_other
   type: boolean
   trueValues:
@@ -3083,6 +3086,7 @@ fields:
   jcoin:originalName: U6d
   jcoin:optional: true
   jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
+  jcoin:skipIf: 'visits_primary_care == 0'
 - name: pc_reason_other_specify
   type: string
   title: 'Primary care visit reason: Specify other reason'
@@ -3093,7 +3097,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: U6d
   jcoin:optional: true
-  jcoin:skipIf: 'pc_reason_alc_drugs=="No"'
+  jcoin:skipIf: 'visits_primary_care == 0'
 - name: op_tx_days
   type: integer
   title: 'Outpatient treament program for alcohol/substance use: Number of days'
@@ -5527,7 +5531,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_detox
   type: boolean
   trueValues:
@@ -5542,7 +5546,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_op
   type: boolean
   trueValues:
@@ -5557,7 +5561,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_iop
   type: boolean
   trueValues:
@@ -5572,7 +5576,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_residential
   type: boolean
   trueValues:
@@ -5587,7 +5591,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_other_tx
   type: boolean
   trueValues:
@@ -5602,7 +5606,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_other_specify
   type: string
   title: 'Preferred OUD treatment: Other specified'
@@ -5613,7 +5617,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_no_treatment
   type: boolean
   trueValues:
@@ -5643,7 +5647,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_moud_type
   type: string
   title: Preferred OUD medication
@@ -5659,7 +5663,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: M3
   jcoin:notes: Ask only if m2 equals OUD medication.
-  jcoin:skipIf: 'prefer_oud_meds == FALSE'
+  jcoin:skipIf: '(oud_tx_not_appropriate == "Yes") | (prefer_oud_meds == "No")'
 - name: prefer_which_bup
   type: string
   title: Type of buprenorphine preferred
@@ -5675,7 +5679,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: M4
   jcoin:notes: Ask only if m3 equals Buprenorphine/Suboxone.
-  jcoin:skipIf: 'prefer_moud_type != "Buprenorphine/Suboxone"'
+  jcoin:skipIf: '(oud_tx_not_appropriate == "Yes") | (prefer_oud_meds == "No") | (prefer_moud_type != "Buprenorphine/Suboxone")'
 - name: prefer_which_naloxone
   type: string
   title: Type of naltrexone preferred
@@ -5690,7 +5694,7 @@ fields:
   jcoin:followup: true
   jcoin:originalName: M5
   jcoin:notes: Ask only if m3 equals Naltrexone/Vivitrol.
-  jcoin:skipIf: 'prefer_moud_type != "Naltrexone/Vivitrol"'
+  jcoin:skipIf: '(oud_tx_not_appropriate == "Yes") | (prefer_oud_meds == "No") | (prefer_moud_type != "Naltrexone/Vivitrol")'
 - name: days_illegal_activity
   type: integer
   title: Days involved in illegal activities
@@ -6163,7 +6167,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J3f
-  jcoin:skipIf: 'currently_incarcerated == FALSE'
+  jcoin:skipIf: 'currently_incarcerated == "No"'
 - name: days_parole
   type: integer
   title: Days on parole
