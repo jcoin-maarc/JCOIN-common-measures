@@ -660,6 +660,20 @@ fields:
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:originalName: D6
+- name: ref_demog_1
+  type: string
+  title: 'Reference period for Demographics vars, Block 1'
+  description: 'Reference period for vars household_people, household_under_18'
+  constraints:
+    enum:
+    - Currently
+    - 30 days prior to jail
+    - 30 days prior to jail if applicable
+    - 90 days prior to jail
+    - 90 days prior
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
 - name: household_people
   type: integer
   title: Household size
