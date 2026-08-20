@@ -30,6 +30,17 @@ fields:
 - name: hub
   type: string
   title: JCOIN hub identifier
+  constraints:
+    enum:
+    - 'Brown University: PIERS'
+    - 'Chestnut Health Systems: RMCA'
+    - 'Friends Research Institute: Brixadi'
+    - 'New York University: EXIT-CJS'
+    - 'Texas Christian University: OTLM'
+    - 'University of Chicago: ROMI'
+    - 'University of Kentucky: WJCOIN'
+    - 'Yale University: ACTION'
+    - 'Yale University: TCN PATHS'
   jcoin:section: Record and Linkage
   jcoin:baseline: true
   jcoin:followup: true
@@ -73,6 +84,7 @@ fields:
     - Deceased
     - Completed study
   jcoin:section: Study Information
+  jcoin:followup: true
 - name: days_on_study
   type: integer
   title: Days on study
@@ -108,16 +120,6 @@ fields:
   title: Maximum compliance value
   description: Maximum possible value of compliance according to study protocol.
   jcoin:section: Study Information
-- name: visit_number
-  type: integer
-  title: Visit number
-  description: Sequential number corresponding to each planned interview or
-    visit (e.g., 'Baseline' = 1, 'Three months' = 2, 'Six months' = 3, etc.)
-  constraints:
-    minimum: 1
-  jcoin:section: Study Information
-  jcoin:baseline: true
-  jcoin:followup: true
 - name: visit_month
   type: string
   title: Timepoint
@@ -128,13 +130,12 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
 - name: shifted_visit_dt
-  type: date
-  title: Visit date
-  description: Date of visit/interview (shifted for de-identification)
+  type: integer
+  title: Days from enrollment to current visit/interview
+  description: Number of days from enrollment to date of current visit/interview
   jcoin:section: Study Information
   jcoin:baseline: true
   jcoin:followup: true
-  jcoin:notes: Shifted for de-identification
 - name: admin_method
   type: string
   title: Method of administration
