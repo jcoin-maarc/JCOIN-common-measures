@@ -2563,7 +2563,6 @@ name: household_income_legal
     - 30 days prior
     - 30 days prior to jail
     - 90 days prior to jail
-    - 90 days prior to jail if applicable
   jcoin:section: Substance Use
   jcoin:baseline: true
   jcoin:followup: true
@@ -3136,7 +3135,6 @@ name: household_income_legal
     - 30 days prior to jail
     - 90 days prior
     - 90 days prior to jail
-    - 90 days prior to jail if applicable
   jcoin:section: Utilization of Services
   jcoin:baseline: true
   jcoin:followup: true
@@ -3438,7 +3436,6 @@ name: household_income_legal
     - 30 days prior
     - 30 days prior to jail
     - 90 days prior to jail
-    - 90 days prior to jail if applicable
   jcoin:section: Utilization of Services
   jcoin:baseline: true
   jcoin:followup: true
@@ -5963,7 +5960,6 @@ name: household_income_legal
     - 30 days prior
     - 30 days prior to jail
     - 90 days prior to jail
-    - 90 days prior to jail if applicable
   jcoin:section: Justice Involvement
   jcoin:baseline: true
   jcoin:followup: true
@@ -6450,7 +6446,6 @@ name: household_income_legal
     - 30 days prior to jail
     - 90 days prior
     - 90 days prior to jail
-    - 90 days prior to jail if applicable
   jcoin:section: Justice Involvement
   jcoin:baseline: true
   jcoin:followup: true
