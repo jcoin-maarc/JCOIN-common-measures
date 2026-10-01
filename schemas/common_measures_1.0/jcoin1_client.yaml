@@ -5890,7 +5890,7 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M2
-  jcoin:skipIf: 'oud_tx_not_appropriate == TRUE'
+  jcoin:skipIf: 'oud_tx_not_appropriate == "Yes"'
 - name: prefer_oud_dk
   type: boolean
   trueValues:
