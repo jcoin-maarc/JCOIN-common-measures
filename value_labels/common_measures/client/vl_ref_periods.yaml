@@ -1,0 +1,39 @@
+value_labels:
+  ref_period:
+    1: Currently
+    2: Currently or prior to jail
+    3: Prior to jail
+    4: 30 days prior
+    5: 30 days prior to jail
+    6: 30 days prior to jail (if applicable)
+    7: 90 days prior
+    8: 90 days prior to jail
+    9: 90 days prior to jail (if applicable)
+    10: 365 days prior
+    11: 365 days prior to jail
+    12: Coded from jail entry and exit date
+    .e: Not collected
+field_to_value_label:
+  ref_demog_1: ref_period
+  ref_demog_2: ref_period
+  ref_demog_3: ref_period
+  ref_demog_4: ref_period
+  ref_demog_5: ref_period
+  ref_demog_6: ref_period
+  ref_demog_7: ref_period
+  ref_demog_8: ref_period
+  ref_demog_9: ref_period
+  ref_demog_10: ref_period
+  ref_demog_11: ref_period
+  ref_demog_12: ref_period
+  ref_subuse_1: ref_period
+  ref_subuse_2: ref_period
+  ref_utilization_1: ref_period
+  ref_utilization_2: ref_period
+  ref_utilization_3: ref_period
+  ref_moudpast_1: ref_period
+  ref_moudpast_2: ref_period
+  ref_moudpast_3: ref_period
+  ref_moud_trtmnt: ref_period
+  ref_justice_1: ref_period
+  ref_justice_2: ref_period

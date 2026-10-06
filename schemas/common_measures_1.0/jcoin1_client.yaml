@@ -669,9 +669,8 @@ fields:
     enum:
     - Currently
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
-    - 90 days prior
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
@@ -705,9 +704,8 @@ fields:
     enum:
     - Currently
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
-    - 90 days prior
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
@@ -768,7 +766,7 @@ fields:
   constraints:
     enum:
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
     - 365 days prior
   jcoin:section: Demographics
@@ -818,7 +816,7 @@ fields:
   constraints:
     enum:
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
     - 365 days prior to jail
   jcoin:section: Demographics
@@ -866,7 +864,7 @@ fields:
   description: 'Reference period for var household_income_illegal_any'
   constraints:
     enum:
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
     - 365 days prior
     - 365 days prior to jail
@@ -900,7 +898,7 @@ fields:
   constraints:
     enum:
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
   jcoin:section: Demographics
   jcoin:baseline: true
@@ -930,7 +928,7 @@ fields:
     - Currently
     - Prior to jail
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
   jcoin:section: Demographics
   jcoin:baseline: true
@@ -988,7 +986,7 @@ fields:
     enum:
     - 30 days prior
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
   jcoin:section: Demographics
   jcoin:baseline: true
@@ -1125,7 +1123,7 @@ fields:
     - Currently or prior to jail
     - Prior to jail
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
+    - 30 days prior to jail (if applicable)
     - 90 days prior to jail
   jcoin:section: Demographics
   jcoin:baseline: true
@@ -1368,7 +1366,6 @@ fields:
     enum:
     - 30 days prior
     - 30 days prior to jail
-    - 30 days prior to jail if applicable
     - 90 days prior to jail
   jcoin:section: Demographics
   jcoin:baseline: true
@@ -1498,7 +1495,6 @@ fields:
   description: 'Reference period for var narcan_received and related variables'
   constraints:
     enum:
-    - At release
     - At most recent release
   jcoin:section: Demographics
   jcoin:baseline: true
@@ -2564,6 +2560,7 @@ fields:
     - 30 days prior
     - 30 days prior to jail
     - 90 days prior to jail
+    - 90 days prior to jail (if applicable)
   jcoin:section: Substance Use
   jcoin:baseline: true
   jcoin:followup: true
@@ -3133,6 +3130,7 @@ fields:
   description: 'Reference period for times_er_visits, nights_*, visits_primary_care, pc_reason_*, op_tx_days*, psych_visits*, counselor_visits*'
   constraints:
     enum:
+    - 30 days prior
     - 30 days prior to jail
     - 90 days prior
     - 90 days prior to jail
@@ -3601,7 +3599,6 @@ fields:
     - Coded from jail entry and exit date
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
-  jcoin:followup: true
 - name: days_incarcerated_interval
   type: integer
   title: Days incarcerated in past 30/XX days)
@@ -3642,7 +3639,6 @@ fields:
     - 90 days prior to jail
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
-  jcoin:followup: true
 - name: days_pti_daily_bup
   type: integer
   title: 'Days PTI: Buprenorphine-naloxone or buprenorphine daily sublingual'
@@ -3676,7 +3672,6 @@ fields:
     - 90 days prior to jail
   jcoin:section: MOUD Lifetime/Past Month Use
   jcoin:baseline: true
-  jcoin:followup: true
 - name: days_daily_bup
   type: integer
   title: 'Days in past 30: Buprenorphine-naloxone or buprenorphine daily sublingual'
@@ -4017,6 +4012,15 @@ fields:
   jcoin:originalName: U15h5
   jcoin:optional: true
   jcoin:skipIf: 'ever_rx_moud == "No"'
+- name: ref_moud_trtmnt
+  type: string
+  title: 'Reference period for MOUD treatment follow-up'
+  description: 'Reference period for meds_since_last_assmnt, moud_bup, moud_bup_*, moud_sub, moud_sub*, moud_wbrix, moud_wbrix_*, moud_mbrix, moud_mbrix_*, moud_prob, moud_prob_*, moud_nal, moud_nal_*, moud_viv, moud_viv_*, moud_meth, moud_meth_*'
+  constraints:
+    enum:
+    - 90 days prior
+  jcoin:section: MOUD Treatment History (Follow-Up Version)
+  jcoin:followup: true
 - name: meds_since_last_assmnt
   type: boolean
   trueValues:
