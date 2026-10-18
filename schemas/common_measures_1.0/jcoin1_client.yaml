@@ -4795,7 +4795,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_comp
   type: boolean
   trueValues:
@@ -4809,7 +4809,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_incar
   type: boolean
   trueValues:
@@ -4823,7 +4823,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_diss
   type: boolean
   trueValues:
@@ -4837,7 +4837,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_nopay
   type: boolean
   trueValues:
@@ -4851,7 +4851,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_prob
   type: boolean
   trueValues:
@@ -4865,7 +4865,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_nosup
   type: boolean
   trueValues:
@@ -4879,7 +4879,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_asked
   type: boolean
   trueValues:
@@ -4893,7 +4893,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_oth
   type: boolean
   trueValues:
@@ -4907,7 +4907,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_reason_oth_desc
   type: string
   title: 'Reason stopped buprenorphine monthly injection (BRIXADI): Other described'
@@ -4915,7 +4915,7 @@ fields:
   jcoin:section: MOUD Treatment History (Follow-Up Version)
   jcoin:followup: true
   jcoin:optional: true
-  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_brix_stopped == "No")'
+  jcoin:skipIf: '(meds_since_last_assmnt == "No" | moud_mbrix == "No" | moud_mbrix_stopped == "No")'
 - name: moud_mbrix_satis_med
   type: string
   title: Overall satisfaction with buprenorphine monthly injection (BRIXADI)
