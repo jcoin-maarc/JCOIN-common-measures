@@ -995,7 +995,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Full-time
+  title: 'Current work situation: Full-time'
   description: Which one of the following statements best describes your work or school
     situation currently? Working full-time, 35 hours or more a week
   jcoin:section: Demographics
@@ -1009,7 +1009,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Part-time
+  title: 'Current work situation: Part-time'
   description: Which one of the following statements best describes your work or school
     situation currently? Working part-time, less than 35 hours a week
   jcoin:section: Demographics
@@ -1023,7 +1023,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Day labor
+  title: 'Current work situation: Day labor'
   description: Which one of the following statements best describes your work or school
     situation currently? Have a job where you are paid one day at a time
   jcoin:section: Demographics
@@ -1037,7 +1037,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: On leave
+  title: 'Current work situation: On leave'
   description: Which one of the following statements best describes your work or school
     situation currently? Have a job, but not at work because of illness, leave, furlough, or strike
   jcoin:section: Demographics
@@ -1051,7 +1051,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Not at work (seasonal)
+  title: 'Current work situation: Not at work (seasonal)'
   description: Which one of the following statements best describes your work or school
     situation currently? Not at work because job is seasonal
   jcoin:section: Demographics
@@ -1065,7 +1065,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Looking for work
+  title: 'Current work situation: Looking for work'
   description: Which one of the following statements best describes your work or school
     situation currently? Unemployed and looking for work
   jcoin:section: Demographics
@@ -1079,7 +1079,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Unemployed (not looking)
+  title: 'Current work situation: Unemployed (not looking)'
   description: Which one of the following statements best describes your work or school
     situation currently? Unemployed and not looking for work
   jcoin:section: Demographics
@@ -1093,7 +1093,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Full-time homemaker
+  title: 'Current work situation: Full-time homemaker'
   description: Which one of the following statements best describes your work or school
     situation currently? Full-time homemaker
   jcoin:section: Demographics
@@ -1107,7 +1107,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: In school
+  title: 'Current work situation: In school'
   description: Which one of the following statements best describes your work or school
     situation currently? In school or training
   jcoin:section: Demographics
@@ -1121,7 +1121,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: In school but not currently attending
+  title: 'Current work situation: In school but not currently attending'
   description: Which one of the following statements best describes your work or school
     situation currently? In school or training, but not currently going to classes
   jcoin:section: Demographics
@@ -1135,7 +1135,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Retired
+  title: 'Current work situation: Retired'
   description: Which one of the following statements best describes your work or school
     situation currently? Retired
   jcoin:section: Demographics
@@ -1149,7 +1149,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: In jail
+  title: 'Current work situation: In jail'
   description: Which one of the following statements best describes your work or school
     situation currently? In jail, prison or detention
   jcoin:section: Demographics
@@ -1163,7 +1163,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Disabled
+  title: 'Current work situation: Disabled'
   description: Which one of the following statements best describes your work or school
     situation currently? Too disabled for work
   jcoin:section: Demographics
@@ -1177,7 +1177,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: In the military
+  title: 'Current work situation: In the military'
   description: Which one of the following statements best describes your work or school
     situation currently? In the military
   jcoin:section: Demographics
@@ -1191,7 +1191,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Doing volunteer work
+  title: 'Current work situation: Doing volunteer work'
   description: Which one of the following statements best describes your work or school
     situation currently? Doing volunteer work
   jcoin:section: Demographics
@@ -1205,7 +1205,7 @@ fields:
   - 'Checked'
   falseValues:
   - 'Unchecked'
-  title: Current work situation: Other work situation
+  title: 'Current work situation: Other work situation'
   description: Which one of the following statements best describes your work or school
     situation currently? Some other work situation
   jcoin:section: Demographics
