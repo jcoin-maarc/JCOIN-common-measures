@@ -952,6 +952,13 @@ fields:
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
+- name: wrk_schl_chkall
+  type: boolean
+  title: Administered work status as check all that apply
+  description: Administered work status as check all that apply
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
 - name: current_work_school
   type: string
   title: Current school or work situation
@@ -981,6 +988,231 @@ fields:
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall == True'
+- name: wrkstat_fulltime
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Full-time
+  description: Which one of the following statements best describes your work or school
+    situation currently? Working full-time, 35 hours or more a week
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wkrstat_parttime
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Part-time
+  description: Which one of the following statements best describes your work or school
+    situation currently? Working part-time, less than 35 hours a week
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_daylab
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Day labor
+  description: Which one of the following statements best describes your work or school
+    situation currently? Have a job where you are paid one day at a time
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wkrstat_onleave
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: On leave
+  description: Which one of the following statements best describes your work or school
+    situation currently? Have a job, but not at work because of illness, leave, furlough, or strike
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_seasonal
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Not at work (seasonal)
+  description: Which one of the following statements best describes your work or school
+    situation currently? Not at work because job is seasonal
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_looking
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Looking for work
+  description: Which one of the following statements best describes your work or school
+    situation currently? Unemployed and looking for work
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_unemployed
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Unemployed (not looking)
+  description: Which one of the following statements best describes your work or school
+    situation currently? Unemployed and not looking for work
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_home
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Full-time homemaker
+  description: Which one of the following statements best describes your work or school
+    situation currently? Full-time homemaker
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_school
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: In school
+  description: Which one of the following statements best describes your work or school
+    situation currently? In school or training
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_schlbreak
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: In school but not currently attending
+  description: Which one of the following statements best describes your work or school
+    situation currently? In school or training, but not currently going to classes
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wkrstat_retired
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Retired
+  description: Which one of the following statements best describes your work or school
+    situation currently? Retired
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wkrstat_jail
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: In jail
+  description: Which one of the following statements best describes your work or school
+    situation currently? In jail, prison or detention
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_disabled
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Disabled
+  description: Which one of the following statements best describes your work or school
+    situation currently? Too disabled for work
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wrkstat_military
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: In the military
+  description: Which one of the following statements best describes your work or school
+    situation currently? In the military
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wkrstat_volunteer
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Doing volunteer work
+  description: Which one of the following statements best describes your work or school
+    situation currently? Doing volunteer work
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
+- name: wkrstat_other
+  type: boolean
+  trueValues:
+  - 'Checked'
+  falseValues:
+  - 'Unchecked'
+  title: Current work situation: Other work situation
+  description: Which one of the following statements best describes your work or school
+    situation currently? Some other work situation
+  jcoin:section: Demographics
+  jcoin:baseline: true
+  jcoin:followup: true
+  jcoin:originalName: D8
+  jcoin:skipIf: 'wrk_schl_chkall != True'
 - name: disabled_specify
   type: string
   title: 'Current school or work situation: Disability described'
