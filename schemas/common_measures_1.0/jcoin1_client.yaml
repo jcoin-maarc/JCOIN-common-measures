@@ -96,7 +96,7 @@ fields:
   title: Treatment arm
   description: Treatment arm to which participant was randomized (hub specific)
   constraints:
-    maxLength: 24
+    maxLength: 36
   jcoin:section: Study Information
   jcoin:baseline: true
 - name: compliance
